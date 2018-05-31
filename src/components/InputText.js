@@ -2,17 +2,20 @@
 import React from 'react';
 import styled from 'styled-components';
 
-// Create an Input component that'll render an <input> tag with some styles
 const Input = styled.input`
+  flex: 1;
   padding: 0.5em;
   margin: 0.5em;
-  color: palevioletred;
-  background: papayawhip;
   border: none;
   border-radius: 3px;
+
+  &::placeholder {
+    font-style: italic;
+    font-weight: 300;
+    color: #e6e6e6;
+  }
 `;
 
-// Defining flow types for the component
 type Props = {
   onSubmit: (text: string) => void
 };
