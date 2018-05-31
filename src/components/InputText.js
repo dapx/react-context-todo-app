@@ -39,16 +39,16 @@ class InputText extends React.PureComponent<Props, State> {
   };
 
   // Submit the input text if has pressed enter.
-  handleKeyPress = (e: Event) => {
-    if (e.key === 'Enter') {
+  handleKeyPress = (evt: Event) => {
+    if (evt.key === 'Enter') {
       const { text } = this.state;
       this.props.onSubmit(text);
       this.setState({ text: '' });
     }
   };
 
-  onChange = (e: Event) => {
-    this.setState({ text: e.target.value });
+  onChange = (evt: Event) => {
+    this.setState({ text: evt.target.value });
   };
 
   render() {
