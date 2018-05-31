@@ -5,6 +5,7 @@ module.exports = {
     "plugin:react/recommended",
     "airbnb-base",
     "plugin:flowtype/recommended",
+    "prettier"
   ],
   "plugins": [
     "react",
