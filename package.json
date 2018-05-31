@@ -12,6 +12,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom --coverage",
+    "flow": "flow",
     "eject": "react-scripts eject"
   },
   "husky": {
@@ -28,6 +29,7 @@
     ]
   },
   "devDependencies": {
+    "flow-bin": "^0.73.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "husky": "^1.0.0-rc.8",
     "lint-staged": "^7.1.2",

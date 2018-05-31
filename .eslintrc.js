@@ -3,12 +3,14 @@ module.exports = {
     "react-app",
     "eslint:recommended",
     "plugin:react/recommended",
-    "airbnb-base"
+    "airbnb-base",
+    "plugin:flowtype/recommended",
   ],
   "plugins": [
     "react",
     // Warns about potential accessibility issues with your React elements.
     "jsx-a11y",
+    "flowtype",
   ],
   "rules": {
     // Allow .js files with jsx
