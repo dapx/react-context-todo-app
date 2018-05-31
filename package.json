@@ -7,7 +7,10 @@
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-scripts": "1.1.4",
-    "styled-components": "^3.3.0"
+    "styled-components": "^3.3.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest-enzyme": "^6.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -35,6 +38,7 @@
     "flow-bin": "^0.73.0",
     "husky": "^1.0.0-rc.8",
     "lint-staged": "^7.1.2",
-    "prettier": "^1.13.2"
+    "prettier": "^1.13.2",
+    "react-test-renderer": "^16.4.0"
   }
 }
