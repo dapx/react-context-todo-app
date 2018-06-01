@@ -6,7 +6,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import uuid from 'uuid/v4';
 
-const { Provider } = React.createContext();
+const { Provider, Consumer } = React.createContext();
 
 /**
  * A component that stores a global state and
@@ -18,10 +18,7 @@ const { Provider } = React.createContext();
  */
 class TodoProvider extends React.PureComponent {
   state = {
-    list: [
-      { id: uuid(), text: 'daniel', isDone: false },
-      { id: uuid(), text: 'joão', isDone: false }
-    ]
+    list: []
   };
 
   // Set a new list with the new todo.
@@ -62,7 +59,7 @@ class TodoProvider extends React.PureComponent {
     this.setState({ list: newList });
   };
 
-  // Returns a handler object list to pass in inside the context
+  // Returns a handler object list to pass inside the provider context
   getHandlers = () => ({
     handleSubmit: this.handleSubmit,
     handleClose: this.handleClose,
@@ -82,5 +79,46 @@ class TodoProvider extends React.PureComponent {
 TodoProvider.propTypes = {
   children: PropTypes.node
 };
+
+// Injects the todo clear handler into onPress
+export function withClearTodos(Component) {
+  return function TodosComponent(props) {
+    return (
+      <Consumer>
+        {({ handleClear }) => <Component {...props} onClear={handleClear} />}
+      </Consumer>
+    );
+  };
+}
+
+// Injects the todo submit handler.
+export function withAddTodo(Component) {
+  return function TodosComponent(props) {
+    return (
+      <Consumer>
+        {({ handleSubmit }) => <Component {...props} onSubmit={handleSubmit} />}
+      </Consumer>
+    );
+  };
+}
+
+// Injects the todo list and its handlers.
+export function withTodos(Component) {
+  return function TodosComponent(props) {
+    return (
+      <Consumer>
+        {({ list, handleClose, handleRemove, handleClear }) => (
+          <Component
+            {...props}
+            onCloseItem={handleClose}
+            onRemoveItem={handleRemove}
+            onClear={handleClear}
+            list={list}
+          />
+        )}
+      </Consumer>
+    );
+  };
+}
 
 export default TodoProvider;
