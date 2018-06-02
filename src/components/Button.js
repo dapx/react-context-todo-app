@@ -1,20 +1,20 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 const Button = styled.button`
   display: flex;
   flex: 1;
   align-items: center;
   justify-content: center;
+  color: #bfbfbf;
   background-color: white;
-  border-radius: 3px;
-  padding: 10px;
-  margin: 10px;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 300;
 
-  ${({ enabled }) =>
-    enabled &&
-    css`
-      background-color: #ddd;
-    `};
+  &:focus {
+    outline: 0;
+  }
 `;
 
 export default Button;
