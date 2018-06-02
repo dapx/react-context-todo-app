@@ -80,18 +80,7 @@ TodoProvider.propTypes = {
   children: PropTypes.node
 };
 
-// Injects the todo clear handler into onPress
-export function withClear(Component) {
-  return function TodosComponent(props) {
-    return (
-      <Consumer>
-        {({ handleClear }) => <Component {...props} onClear={handleClear} />}
-      </Consumer>
-    );
-  };
-}
-
-// Injects the todo submit handler.
+// Injects the todo add handler.
 export function withAdd(Component) {
   return function TodosComponent(props) {
     return (
