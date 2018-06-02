@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import './App.css';
+import TodoProvider, { withAdd } from './modules/Todo';
 import InputText from './components/InputText';
 
 const Window = styled.div`
@@ -42,6 +43,8 @@ const Title = styled.h1`
   text-rendering: optimizeLegibility;
 `;
 
+const TodoInput = withAdd(InputText);
+
 type Props = {};
 
 class App extends Component<Props> {
@@ -53,7 +56,9 @@ class App extends Component<Props> {
             <Title>todos</Title>
           </Header>
           <Paper>
-            <InputText onSubmit={() => {}} />
+            <TodoProvider>
+              <TodoInput />
+            </TodoProvider>
           </Paper>
         </Container>
       </Window>
