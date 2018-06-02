@@ -22,7 +22,7 @@ class TodoProvider extends React.PureComponent {
   };
 
   // Set a new list with the new todo.
-  handleSubmit = text => {
+  handleAdd = text => {
     const newTodo = { id: uuid(), text, done: false };
     const list = [newTodo, ...this.state.list];
     this.setState({ list });
@@ -61,7 +61,7 @@ class TodoProvider extends React.PureComponent {
 
   // Returns a handler object list to pass inside the provider context
   getHandlers = () => ({
-    handleSubmit: this.handleSubmit,
+    handleAdd: this.handleAdd,
     handleClose: this.handleClose,
     handleRemove: this.handleRemove,
     handleClear: this.handleClear
@@ -81,7 +81,7 @@ TodoProvider.propTypes = {
 };
 
 // Injects the todo clear handler into onPress
-export function withClearTodos(Component) {
+export function withClear(Component) {
   return function TodosComponent(props) {
     return (
       <Consumer>
@@ -92,11 +92,11 @@ export function withClearTodos(Component) {
 }
 
 // Injects the todo submit handler.
-export function withAddTodo(Component) {
+export function withAdd(Component) {
   return function TodosComponent(props) {
     return (
       <Consumer>
-        {({ handleSubmit }) => <Component {...props} onSubmit={handleSubmit} />}
+        {({ handleAdd }) => <Component {...props} onSubmit={handleAdd} />}
       </Consumer>
     );
   };
