@@ -10,7 +10,8 @@ const Text = styled.span`
   padding: 10px;
   transition: color 0.3s linear 0.2s;
   font-size: 24px;
-  overflow: scroll;
+  word-wrap: break-word;
+  word-break: break-word;
 
   ${({ checked }) =>
     checked &&
