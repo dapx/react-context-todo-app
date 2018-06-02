@@ -2,8 +2,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import './App.css';
-import TodoProvider, { withAdd } from './modules/Todo';
+import TodoProvider, { withAdd, withTodos } from './modules/Todo';
 import InputText from './components/InputText';
+import List from './components/List';
 
 const Window = styled.div`
   display: flex;
@@ -44,6 +45,7 @@ const Title = styled.h1`
 `;
 
 const TodoInput = withAdd(InputText);
+const TodoList = withTodos(List);
 
 type Props = {};
 
@@ -58,6 +60,7 @@ class App extends Component<Props> {
           <Paper>
             <TodoProvider>
               <TodoInput />
+              <TodoList />
             </TodoProvider>
           </Paper>
         </Container>
