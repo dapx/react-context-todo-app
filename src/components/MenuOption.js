@@ -1,24 +1,18 @@
-import styled, { css } from 'styled-components';
+import { css } from 'styled-components';
+import Button from './Button';
 
-const Option = styled.button`
+const Option = Button.extend`
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex: none;
   background-color: white;
-  border: 0;
-  color: #bfbfbf;
+  border: 1px solid transparent;
   border-radius: 3px;
-  padding: 5px;
-  margin: 5px;
-
-  &:focus {
-    outline: 0;
-  }
+  transition: border-color 0.2s linear;
 
   ${({ enabled }) =>
     enabled &&
     css`
-      border: 1px solid rgba(175, 47, 47, 0.5);
+      border-color: rgba(175, 47, 47, 0.5);
     `};
 `;
 
