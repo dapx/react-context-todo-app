@@ -55,7 +55,7 @@ class TodoProvider extends React.PureComponent {
   // Set a new list without items done.
   handleClear = () => {
     const { list } = this.state;
-    const newList = list.filter(({ isDone }) => isDone !== true);
+    const newList = list.filter(({ isDone }) => !isDone);
     this.setState({ list: newList });
   };
 
