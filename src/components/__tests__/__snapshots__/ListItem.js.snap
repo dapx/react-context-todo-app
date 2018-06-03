@@ -6,7 +6,7 @@ exports[`ListItem Component should checkbox and text be checked and empty 1`] = 
 >
   <button
     checked={true}
-    className="sc-bZQynM edotRU"
+    className="sc-bZQynM kWRFME"
     onClick={[Function]}
   />
   <span
@@ -17,7 +17,7 @@ exports[`ListItem Component should checkbox and text be checked and empty 1`] = 
     
   </span>
   <button
-    className="sc-gzVnrw iNTQMt"
+    className="sc-gzVnrw dTBaCJ"
     onClick={[Function]}
   >
     X
@@ -31,7 +31,7 @@ exports[`ListItem Component should checkbox and text be checked and not empty 1`
 >
   <button
     checked={true}
-    className="sc-bZQynM edotRU"
+    className="sc-bZQynM kWRFME"
     onClick={[Function]}
   />
   <span
@@ -42,7 +42,7 @@ exports[`ListItem Component should checkbox and text be checked and not empty 1`
     some text
   </span>
   <button
-    className="sc-gzVnrw iNTQMt"
+    className="sc-gzVnrw dTBaCJ"
     onClick={[Function]}
   >
     X
@@ -56,7 +56,7 @@ exports[`ListItem Component should checkbox and text be unchecked and empty 1`] 
 >
   <button
     checked={false}
-    className="sc-bZQynM jGCXTe"
+    className="sc-bZQynM bmWDER"
     onClick={[Function]}
   />
   <span
@@ -67,7 +67,7 @@ exports[`ListItem Component should checkbox and text be unchecked and empty 1`] 
     
   </span>
   <button
-    className="sc-gzVnrw iNTQMt"
+    className="sc-gzVnrw dTBaCJ"
     onClick={[Function]}
   >
     X
@@ -81,7 +81,7 @@ exports[`ListItem Component should checkbox and text be unchecked and not empty 
 >
   <button
     checked={false}
-    className="sc-bZQynM jGCXTe"
+    className="sc-bZQynM bmWDER"
     onClick={[Function]}
   />
   <span
@@ -92,7 +92,7 @@ exports[`ListItem Component should checkbox and text be unchecked and not empty 
     some text
   </span>
   <button
-    className="sc-gzVnrw iNTQMt"
+    className="sc-gzVnrw dTBaCJ"
     onClick={[Function]}
   >
     X

@@ -2,13 +2,13 @@
 
 exports[`Button Component should be the same as the snapshot 1`] = `
 <button
-  className="sc-htpNat eZAYhP"
+  className="sc-htpNat FLdqD"
 />
 `;
 
 exports[`Button Component should hide button when hidden prop is true 1`] = `
 <button
-  className="sc-htpNat hiWImV"
+  className="sc-htpNat ckZtac"
   hidden={true}
 />
 `;

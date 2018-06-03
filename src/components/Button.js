@@ -2,6 +2,8 @@ import { css } from 'styled-components';
 import Link from './Link';
 
 const Button = Link.withComponent('button').extend`
+  transition: visibility .4s linear, opacity .4s linear;
+
   &:focus {
     outline: 0;
     border:1px solid rgba(175,47,47,0.15);
@@ -11,6 +13,7 @@ const Button = Link.withComponent('button').extend`
   ${({ hidden }) =>
     hidden &&
     css`
+      opacity: 0;
       visibility: hidden;
     `}
 `;
