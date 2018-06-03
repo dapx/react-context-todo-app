@@ -68,6 +68,7 @@ const ClearButton = Button.extend`
 
 type Props = {
   list: Todo[],
+  onEditItem: (item: Todo) => void,
   onRemoveItem: (index: string) => void,
   onCloseItem: (index: string) => void,
   onClear: () => void
@@ -108,7 +109,12 @@ export default class List extends React.PureComponent<Props, State> {
   setDoneVisibility = () => this.onChangeVisibility(Visibility.DONE);
 
   render() {
-    const { onRemoveItem, onCloseItem, onClear } = this.props;
+    const {
+      onEditItem,
+      onRemoveItem,
+      onCloseItem,
+      onClear
+    } = this.props;
     const { list, visibility } = this.state;
     return (
       <Container>
@@ -118,6 +124,7 @@ export default class List extends React.PureComponent<Props, State> {
               id={item.id}
               key={`${item.id}`}
               text={item.text}
+              onEdit={onEditItem}
               onClose={onCloseItem}
               onRemove={onRemoveItem}
               checked={item.isDone}
