@@ -1,6 +1,7 @@
 // @flow
 import React from 'react';
 import styled from 'styled-components';
+import type { Event } from '../flowtypes';
 
 const Input = styled.input`
   flex: 1;
@@ -18,7 +19,7 @@ const Input = styled.input`
 
   &:focus {
     outline: 0;
-    border:1px solid rgba(175,47,47,0.15);
+    border: 1px solid rgba(175, 47, 47, 0.15);
     box-shadow: 0 0 10px #e6e6e6;
   }
 `;
@@ -28,12 +29,6 @@ type Props = {
 };
 type State = {
   text: string
-};
-type Event = {
-  key: string,
-  target: {
-    value: string
-  }
 };
 
 /**
