@@ -2,21 +2,21 @@
 
 exports[`ListItem Component should checkbox and text be checked and empty 1`] = `
 <li
-  className="sc-bwzfXH gLCbwA"
+  className="sc-ifAKCX jsMcJN"
 >
   <button
     checked={true}
-    className="sc-htpNat lobAWz"
+    className="sc-EHOje cYIXJ"
     onClick={[Function]}
   />
   <span
     checked={true}
-    className="sc-bdVaJa jccpbQ"
+    className="sc-bxivhb ebQrUA"
   >
     
   </span>
   <button
-    className="sc-bxivhb exxNDu"
+    className="sc-bZQynM gazlcN"
     onClick={[Function]}
   >
     X
@@ -26,21 +26,21 @@ exports[`ListItem Component should checkbox and text be checked and empty 1`] = 
 
 exports[`ListItem Component should checkbox and text be checked and not empty 1`] = `
 <li
-  className="sc-bwzfXH gLCbwA"
+  className="sc-ifAKCX jsMcJN"
 >
   <button
     checked={true}
-    className="sc-htpNat lobAWz"
+    className="sc-EHOje cYIXJ"
     onClick={[Function]}
   />
   <span
     checked={true}
-    className="sc-bdVaJa jccpbQ"
+    className="sc-bxivhb ebQrUA"
   >
     some text
   </span>
   <button
-    className="sc-bxivhb exxNDu"
+    className="sc-bZQynM gazlcN"
     onClick={[Function]}
   >
     X
@@ -50,21 +50,21 @@ exports[`ListItem Component should checkbox and text be checked and not empty 1`
 
 exports[`ListItem Component should checkbox and text be unchecked and empty 1`] = `
 <li
-  className="sc-bwzfXH gLCbwA"
+  className="sc-ifAKCX jsMcJN"
 >
   <button
     checked={false}
-    className="sc-htpNat lpjhKa"
+    className="sc-EHOje fdMPqF"
     onClick={[Function]}
   />
   <span
     checked={false}
-    className="sc-bdVaJa OSQPE"
+    className="sc-bxivhb btjxdt"
   >
     
   </span>
   <button
-    className="sc-bxivhb exxNDu"
+    className="sc-bZQynM gazlcN"
     onClick={[Function]}
   >
     X
@@ -74,21 +74,21 @@ exports[`ListItem Component should checkbox and text be unchecked and empty 1`] 
 
 exports[`ListItem Component should checkbox and text be unchecked and not empty 1`] = `
 <li
-  className="sc-bwzfXH gLCbwA"
+  className="sc-ifAKCX jsMcJN"
 >
   <button
     checked={false}
-    className="sc-htpNat lpjhKa"
+    className="sc-EHOje fdMPqF"
     onClick={[Function]}
   />
   <span
     checked={false}
-    className="sc-bdVaJa OSQPE"
+    className="sc-bxivhb btjxdt"
   >
     some text
   </span>
   <button
-    className="sc-bxivhb exxNDu"
+    className="sc-bZQynM gazlcN"
     onClick={[Function]}
   >
     X

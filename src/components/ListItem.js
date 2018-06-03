@@ -1,6 +1,7 @@
 // @flow
 import React from 'react';
 import styled, { css } from 'styled-components';
+import Button from './Button';
 import AcceptIcon from '../accept-icon.png';
 
 export const Text = styled.span`
@@ -37,7 +38,7 @@ const Item = styled.li`
   }
 `;
 
-export const CheckBox = styled.button`
+export const CheckBox = Button.extend`
   display: flex;
   flex: 1;
   background-color: white;
@@ -64,7 +65,7 @@ export const CheckBox = styled.button`
     `};
 `;
 
-export const RemoveButton = styled.button`
+export const RemoveButton = Button.extend`
   display: flex;
   flex: 1;
   justify-content: center;
