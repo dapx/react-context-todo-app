@@ -15,6 +15,12 @@ const Input = styled.input`
     font-weight: 300;
     color: #e6e6e6;
   }
+
+  &:focus {
+    outline: 0;
+    border:1px solid rgba(175,47,47,0.15);
+    box-shadow: 0 0 10px #e6e6e6;
+  }
 `;
 
 type Props = {
