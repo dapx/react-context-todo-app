@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem Component should checkbox and text be checked and empty 1`] = `
+<li
+  className="sc-bwzfXH gLCbwA"
+>
+  <button
+    checked={true}
+    className="sc-htpNat lobAWz"
+    onClick={[Function]}
+  />
+  <span
+    checked={true}
+    className="sc-bdVaJa jccpbQ"
+  >
+    
+  </span>
+  <button
+    className="sc-bxivhb exxNDu"
+    onClick={[Function]}
+  >
+    X
+  </button>
+</li>
+`;
+
+exports[`ListItem Component should checkbox and text be checked and not empty 1`] = `
+<li
+  className="sc-bwzfXH gLCbwA"
+>
+  <button
+    checked={true}
+    className="sc-htpNat lobAWz"
+    onClick={[Function]}
+  />
+  <span
+    checked={true}
+    className="sc-bdVaJa jccpbQ"
+  >
+    some text
+  </span>
+  <button
+    className="sc-bxivhb exxNDu"
+    onClick={[Function]}
+  >
+    X
+  </button>
+</li>
+`;
+
+exports[`ListItem Component should checkbox and text be unchecked and empty 1`] = `
+<li
+  className="sc-bwzfXH gLCbwA"
+>
+  <button
+    checked={false}
+    className="sc-htpNat lpjhKa"
+    onClick={[Function]}
+  />
+  <span
+    checked={false}
+    className="sc-bdVaJa OSQPE"
+  >
+    
+  </span>
+  <button
+    className="sc-bxivhb exxNDu"
+    onClick={[Function]}
+  >
+    X
+  </button>
+</li>
+`;
+
+exports[`ListItem Component should checkbox and text be unchecked and not empty 1`] = `
+<li
+  className="sc-bwzfXH gLCbwA"
+>
+  <button
+    checked={false}
+    className="sc-htpNat lpjhKa"
+    onClick={[Function]}
+  />
+  <span
+    checked={false}
+    className="sc-bdVaJa OSQPE"
+  >
+    some text
+  </span>
+  <button
+    className="sc-bxivhb exxNDu"
+    onClick={[Function]}
+  >
+    X
+  </button>
+</li>
+`;

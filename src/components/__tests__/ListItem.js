@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { mount } from 'enzyme';
-import ListItem, { CheckBox, RemoveButton } from '../ListItem';
+import renderer from 'react-test-renderer';
+import ListItem, { CheckBox, Text, RemoveButton } from '../ListItem';
 
 describe('ListItem Component', () => {
   it('renders without crashing', () => {
@@ -53,6 +54,114 @@ describe('ListItem Component', () => {
       removeButton.simulate('click');
       expect(handleClose.mock.calls.length).toEqual(0);
       expect(handleRemove.mock.calls.length).toEqual(1);
+    });
+  });
+
+  describe('should checkbox and text be', () => {
+    it('unchecked', () => {
+      const handleClose = jest.fn();
+      const handleRemove = jest.fn();
+      const wrapper = mount(
+        <ListItem
+          id={'some-id'}
+          text={'some text'}
+          onClose={handleClose}
+          onRemove={handleRemove}
+          checked={false}
+        />
+      );
+      const checkbox = wrapper.find(CheckBox);
+      const text = wrapper.find(Text);
+
+      const isCheckBoxChecked = checkbox.prop('checked');
+      const isTextChecked = text.prop('checked');
+
+      expect(isCheckBoxChecked).toBe(false);
+      expect(isTextChecked).toBe(false);
+      expect(isCheckBoxChecked).toBe(isTextChecked);
+    });
+
+    it('unchecked and empty', () => {
+      const tree = renderer
+        .create(
+          <ListItem
+            id={'some-id'}
+            text={''}
+            onClose={() => {}}
+            onRemove={() => {}}
+            checked={false}
+          />
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
+    it('unchecked and not empty', () => {
+      const tree = renderer
+        .create(
+          <ListItem
+            id={'some-id'}
+            text={'some text'}
+            onClose={() => {}}
+            onRemove={() => {}}
+            checked={false}
+          />
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
+    it('checked', () => {
+      const handleClose = jest.fn();
+      const handleRemove = jest.fn();
+      const wrapper = mount(
+        <ListItem
+          id={'some-id'}
+          text={'some text'}
+          onClose={handleClose}
+          onRemove={handleRemove}
+          checked={true}
+        />
+      );
+      const checkbox = wrapper.find(CheckBox);
+      const text = wrapper.find(Text);
+
+      const isCheckBoxChecked = checkbox.prop('checked');
+      const isTextChecked = text.prop('checked');
+
+      expect(isCheckBoxChecked).toBe(true);
+      expect(isTextChecked).toBe(true);
+      expect(isCheckBoxChecked).toBe(isTextChecked);
+    });
+
+    it('checked and empty', () => {
+      const tree = renderer
+        .create(
+          <ListItem
+            id={'some-id'}
+            text={''}
+            onClose={() => {}}
+            onRemove={() => {}}
+            checked={true}
+          />
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
+    it('checked and not empty', () => {
+      const tree = renderer
+        .create(
+          <ListItem
+            id={'some-id'}
+            text={'some text'}
+            onClose={() => {}}
+            onRemove={() => {}}
+            checked={true}
+          />
+        )
+        .toJSON();
+      expect(tree).toMatchSnapshot();
     });
   });
 });
