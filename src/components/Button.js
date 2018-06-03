@@ -1,3 +1,4 @@
+import { css } from 'styled-components';
 import Link from './Link';
 
 const Button = Link.withComponent('button').extend`
@@ -6,6 +7,12 @@ const Button = Link.withComponent('button').extend`
     border:1px solid rgba(175,47,47,0.15);
     box-shadow: 0 0 10px #e6e6e6;
   }
+
+  ${({ hidden }) =>
+    hidden &&
+    css`
+      visibility: hidden;
+    `}
 `;
 
 export default Button;

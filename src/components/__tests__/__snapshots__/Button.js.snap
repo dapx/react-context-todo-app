@@ -1,7 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should be the same as the snapshot 1`] = `
+exports[`Button Component should be the same as the snapshot 1`] = `
 <button
-  className="sc-htpNat fjeIch"
+  className="sc-htpNat eZAYhP"
+/>
+`;
+
+exports[`Button Component should hide button when hidden prop is true 1`] = `
+<button
+  className="sc-htpNat hiWImV"
+  hidden={true}
 />
 `;
