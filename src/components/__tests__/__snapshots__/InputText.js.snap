@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be the same as the snapshot 1`] = `
+<input
+  autoFocus={true}
+  className="sc-bdVaJa bhfcXg"
+  onChange={[Function]}
+  onKeyDown={[Function]}
+  placeholder="What needs to be done?"
+  type="text"
+  value=""
+/>
+`;

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { shallow, mount } from 'enzyme';
+import renderer from 'react-test-renderer';
 import InputText from '../InputText';
 
 it('renders without crashing', () => {
@@ -41,4 +42,9 @@ it('Should clear text input when pressed enter key', () => {
   expect(wrapper.state('text')).toEqual('');
   input.simulate('keydown', { key: 'Enter' });
   expect(handleSubmit).toBeCalledWith('');
+});
+
+it('should be the same as the snapshot', () => {
+  const tree = renderer.create(<InputText />).toJSON();
+  expect(tree).toMatchSnapshot();
 });
