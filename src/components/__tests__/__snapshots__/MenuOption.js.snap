@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MenuOption Component should be disabled 1`] = `
-<button
-  className="sc-bwzfXH dyDZXR"
+<a
+  className="sc-bwzfXH hcawhA"
 />
 `;
 
 exports[`MenuOption Component should be enabled 1`] = `
-<button
-  className="sc-bwzfXH grNLOn"
+<a
+  className="sc-bwzfXH cjqYyf"
 />
 `;

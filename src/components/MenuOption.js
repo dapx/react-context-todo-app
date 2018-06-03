@@ -1,12 +1,13 @@
 import { css } from 'styled-components';
-import Button from './Button';
+import Link from './Link';
 
-const Option = Button.extend`
+const Option = Link.extend`
   display: flex;
   flex: none;
   background-color: white;
   border: 1px solid transparent;
   border-radius: 3px;
+  text-decoration: none;
   transition: border-color 0.2s linear;
 
   ${({ enabled }) =>
