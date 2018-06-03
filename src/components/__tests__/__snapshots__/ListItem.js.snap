@@ -2,21 +2,22 @@
 
 exports[`ListItem Component should checkbox and text be checked and empty 1`] = `
 <li
-  className="sc-ifAKCX jsMcJN"
+  className="sc-EHOje lhpJrP"
+  onDoubleClick={[Function]}
 >
   <button
     checked={true}
-    className="sc-EHOje cYIXJ"
+    className="sc-bZQynM bUdJUJ"
     onClick={[Function]}
   />
   <span
     checked={true}
-    className="sc-bxivhb ebQrUA"
+    className="sc-ifAKCX dpBAuT"
   >
     
   </span>
   <button
-    className="sc-bZQynM gazlcN"
+    className="sc-gzVnrw brvceJ"
     onClick={[Function]}
   >
     X
@@ -26,21 +27,22 @@ exports[`ListItem Component should checkbox and text be checked and empty 1`] = 
 
 exports[`ListItem Component should checkbox and text be checked and not empty 1`] = `
 <li
-  className="sc-ifAKCX jsMcJN"
+  className="sc-EHOje lhpJrP"
+  onDoubleClick={[Function]}
 >
   <button
     checked={true}
-    className="sc-EHOje cYIXJ"
+    className="sc-bZQynM bUdJUJ"
     onClick={[Function]}
   />
   <span
     checked={true}
-    className="sc-bxivhb ebQrUA"
+    className="sc-ifAKCX dpBAuT"
   >
     some text
   </span>
   <button
-    className="sc-bZQynM gazlcN"
+    className="sc-gzVnrw brvceJ"
     onClick={[Function]}
   >
     X
@@ -50,21 +52,22 @@ exports[`ListItem Component should checkbox and text be checked and not empty 1`
 
 exports[`ListItem Component should checkbox and text be unchecked and empty 1`] = `
 <li
-  className="sc-ifAKCX jsMcJN"
+  className="sc-EHOje lhpJrP"
+  onDoubleClick={[Function]}
 >
   <button
     checked={false}
-    className="sc-EHOje fdMPqF"
+    className="sc-bZQynM ciuIXE"
     onClick={[Function]}
   />
   <span
     checked={false}
-    className="sc-bxivhb btjxdt"
+    className="sc-ifAKCX kENJqM"
   >
     
   </span>
   <button
-    className="sc-bZQynM gazlcN"
+    className="sc-gzVnrw brvceJ"
     onClick={[Function]}
   >
     X
@@ -74,21 +77,22 @@ exports[`ListItem Component should checkbox and text be unchecked and empty 1`] 
 
 exports[`ListItem Component should checkbox and text be unchecked and not empty 1`] = `
 <li
-  className="sc-ifAKCX jsMcJN"
+  className="sc-EHOje lhpJrP"
+  onDoubleClick={[Function]}
 >
   <button
     checked={false}
-    className="sc-EHOje fdMPqF"
+    className="sc-bZQynM ciuIXE"
     onClick={[Function]}
   />
   <span
     checked={false}
-    className="sc-bxivhb btjxdt"
+    className="sc-ifAKCX kENJqM"
   >
     some text
   </span>
   <button
-    className="sc-bZQynM gazlcN"
+    className="sc-gzVnrw brvceJ"
     onClick={[Function]}
   >
     X

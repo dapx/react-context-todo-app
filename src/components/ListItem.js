@@ -3,6 +3,25 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import Button from './Button';
 import AcceptIcon from '../accept-icon.png';
+import type { Todo, Event } from '../flowtypes';
+
+const InputText = styled.input`
+  display: flex;
+  flex: 1;
+  font-size: 24px;
+  word-wrap: break-word;
+  word-break: break-word;
+  border: none;
+  border-radius: 3px;
+  font-size: 24px;
+  padding: 10px;
+
+  &:focus {
+    outline: 0;
+    border: 1px solid rgba(175, 47, 47, 0.15);
+    box-shadow: 0 0 10px #e6e6e6;
+  }
+`;
 
 export const Text = styled.span`
   display: flex;
@@ -89,9 +108,15 @@ export const RemoveButton = Button.extend`
   }
 `;
 
+type State = {
+  text: string,
+  isEditing: boolean
+};
+
 type Props = {
   id: string,
   text: string,
+  onEdit: (item: Todo) => void,
   onClose: (index: string) => void,
   onRemove: (index: string) => void,
   checked: boolean
@@ -100,7 +125,32 @@ type Props = {
 /**
  * Represents an Item Component from a List Component.
  */
-class ListItem extends React.PureComponent<Props> {
+class ListItem extends React.PureComponent<Props, State> {
+  state = {
+    text: this.props.text,
+    isEditing: false
+  };
+
+  // Submit the input text if has pressed enter.
+  handleKeyPress = (evt: Event) => {
+    if (evt.key === 'Enter') {
+      const { text } = this.state;
+      const { id, onEdit, checked } = this.props;
+
+      onEdit({ id, text, isDone: checked });
+      this.onBlur();
+    } else if (evt.key === 'Escape') {
+      const { text } = this.props;
+
+      this.setState({ text });
+      this.onBlur();
+    }
+  };
+
+  onChange = (evt: Event) => this.setState({ text: evt.target.value });
+  onDoubleClick = () => this.setState({ isEditing: true });
+  onBlur = () => this.setState({ isEditing: false });
+
   onClose = () => {
     const { id, onClose } = this.props;
     onClose(id);
@@ -112,9 +162,22 @@ class ListItem extends React.PureComponent<Props> {
   };
 
   render() {
-    const { text, checked } = this.props;
+    const { checked } = this.props;
+    const { isEditing, text } = this.state;
+    if (isEditing) {
+      return (
+        <Item onBlur={this.onBlur}>
+          <InputText
+            onKeyDown={this.handleKeyPress}
+            onChange={this.onChange}
+            value={text}
+            autoFocus={true}
+          />
+        </Item>
+      );
+    }
     return (
-      <Item>
+      <Item onDoubleClick={this.onDoubleClick}>
         <CheckBox onClick={this.onClose} checked={checked} />
         <Text checked={checked}>{text}</Text>
         <RemoveButton onClick={this.onRemove}>{'X'}</RemoveButton>

@@ -3,7 +3,7 @@
 exports[`should be the same as the snapshot 1`] = `
 <input
   autoFocus={true}
-  className="sc-bdVaJa ZotXA"
+  className="sc-bdVaJa gKrhPj"
   onChange={[Function]}
   onKeyDown={[Function]}
   placeholder="What needs to be done?"
