@@ -108,13 +108,13 @@ export default class List extends React.PureComponent<Props, State> {
   setTodoVisibility = () => this.onChangeVisibility(Visibility.TODO);
   setDoneVisibility = () => this.onChangeVisibility(Visibility.DONE);
 
+  hasCompleted = () => {
+    const { list } = this.props;
+    return list.find(item => item.isDone);
+  };
+
   render() {
-    const {
-      onEditItem,
-      onRemoveItem,
-      onCloseItem,
-      onClear
-    } = this.props;
+    const { onEditItem, onRemoveItem, onCloseItem, onClear } = this.props;
     const { list, visibility } = this.state;
     return (
       <Container>
@@ -156,7 +156,9 @@ export default class List extends React.PureComponent<Props, State> {
               {'Completed'}
             </Option>
           </FilterMenu>
-          <ClearButton onClick={onClear}>{'Clear completed'}</ClearButton>
+          <ClearButton onClick={onClear} hidden={!this.hasCompleted()}>
+            {'Clear completed'}
+          </ClearButton>
         </Footer>
       </Container>
     );

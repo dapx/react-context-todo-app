@@ -4,5 +4,5 @@ import List from '../List';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<List onClick={() => {}} />, div);
+  ReactDOM.render(<List list={[]} onClick={() => {}} />, div);
 });
