@@ -128,18 +128,21 @@ export default class List extends React.PureComponent<Props, State> {
           <Info>{`${list.length} ${pluralize(list.length, 'item')}`}</Info>
           <FilterMenu>
             <Option
+              href={'#'}
               onClick={this.setNoneVisibility}
               enabled={visibility === Visibility.NONE}
             >
               {'All'}
             </Option>
             <Option
+              href={'#/active'}
               onClick={this.setTodoVisibility}
               enabled={visibility === Visibility.TODO}
             >
               {'Active'}
             </Option>
             <Option
+              href={'#/completed'}
               onClick={this.setDoneVisibility}
               enabled={visibility === Visibility.DONE}
             >
