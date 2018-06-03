@@ -28,6 +28,22 @@ class TodoProvider extends React.PureComponent {
     this.setState({ list });
   };
 
+  // Set a new list with the updated todo.
+  handleEdit = newItem => {
+    const { list } = this.state;
+    const index = list.findIndex(item => item.id === newItem.id);
+    const item = list[index];
+    const newList = [
+      ...list.slice(0, index),
+      {
+        ...item,
+        ...newItem
+      },
+      ...list.slice(index + 1)
+    ];
+    this.setState({ list: newList });
+  };
+
   // Set a new list without the removed todo.
   handleRemove = id => {
     const { list } = this.state;
@@ -62,6 +78,7 @@ class TodoProvider extends React.PureComponent {
   // Returns a handler object list to pass inside the provider context
   getHandlers = () => ({
     handleAdd: this.handleAdd,
+    handleEdit: this.handleEdit,
     handleClose: this.handleClose,
     handleRemove: this.handleRemove,
     handleClear: this.handleClear
@@ -96,9 +113,10 @@ export function withTodos(Component) {
   return function TodosComponent(props) {
     return (
       <Consumer>
-        {({ list, handleClose, handleRemove, handleClear }) => (
+        {({ list, handleEdit, handleClose, handleRemove, handleClear }) => (
           <Component
             {...props}
+            onEditItem={handleEdit}
             onCloseItem={handleClose}
             onRemoveItem={handleRemove}
             onClear={handleClear}
