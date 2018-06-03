@@ -3,7 +3,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import AcceptIcon from '../accept-icon.png';
 
-const Text = styled.span`
+export const Text = styled.span`
   display: flex;
   flex: 8;
   flex-wrap: nowrap;
@@ -37,7 +37,7 @@ const Item = styled.li`
   }
 `;
 
-const CheckBox = styled.button`
+export const CheckBox = styled.button`
   display: flex;
   flex: 1;
   background-color: white;
@@ -64,7 +64,7 @@ const CheckBox = styled.button`
     `};
 `;
 
-const RemoveButton = styled.button`
+export const RemoveButton = styled.button`
   display: flex;
   flex: 1;
   justify-content: center;
@@ -89,8 +89,8 @@ const RemoveButton = styled.button`
 `;
 
 type Props = {
-  text: string,
   id: string,
+  text: string,
   onClose: (index: string) => void,
   onRemove: (index: string) => void,
   checked: boolean
