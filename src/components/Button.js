@@ -1,19 +1,10 @@
-import styled from 'styled-components';
+import Link from './Link';
 
-const Button = styled.button`
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-  color: #bfbfbf;
-  background-color: white;
-  padding: 5px;
-  margin: 5px;
-  font-size: 12px;
-  font-weight: 300;
-
+const Button = Link.withComponent('button').extend`
   &:focus {
     outline: 0;
+    border:1px solid rgba(175,47,47,0.15);
+    box-shadow: 0 0 10px #e6e6e6;
   }
 `;
 
