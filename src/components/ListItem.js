@@ -177,9 +177,11 @@ class ListItem extends React.PureComponent<Props, State> {
       );
     }
     return (
-      <Item onDoubleClick={this.onDoubleClick}>
+      <Item>
         <CheckBox onClick={this.onClose} checked={checked} />
-        <Text checked={checked}>{text}</Text>
+        <Text onDoubleClick={this.onDoubleClick} checked={checked}>
+          {text}
+        </Text>
         <RemoveButton onClick={this.onRemove}>{'X'}</RemoveButton>
       </Item>
     );

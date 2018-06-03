@@ -3,7 +3,6 @@
 exports[`ListItem Component should checkbox and text be checked and empty 1`] = `
 <li
   className="sc-EHOje lhpJrP"
-  onDoubleClick={[Function]}
 >
   <button
     checked={true}
@@ -13,6 +12,7 @@ exports[`ListItem Component should checkbox and text be checked and empty 1`] = 
   <span
     checked={true}
     className="sc-ifAKCX dpBAuT"
+    onDoubleClick={[Function]}
   >
     
   </span>
@@ -28,7 +28,6 @@ exports[`ListItem Component should checkbox and text be checked and empty 1`] = 
 exports[`ListItem Component should checkbox and text be checked and not empty 1`] = `
 <li
   className="sc-EHOje lhpJrP"
-  onDoubleClick={[Function]}
 >
   <button
     checked={true}
@@ -38,6 +37,7 @@ exports[`ListItem Component should checkbox and text be checked and not empty 1`
   <span
     checked={true}
     className="sc-ifAKCX dpBAuT"
+    onDoubleClick={[Function]}
   >
     some text
   </span>
@@ -53,7 +53,6 @@ exports[`ListItem Component should checkbox and text be checked and not empty 1`
 exports[`ListItem Component should checkbox and text be unchecked and empty 1`] = `
 <li
   className="sc-EHOje lhpJrP"
-  onDoubleClick={[Function]}
 >
   <button
     checked={false}
@@ -63,6 +62,7 @@ exports[`ListItem Component should checkbox and text be unchecked and empty 1`] 
   <span
     checked={false}
     className="sc-ifAKCX kENJqM"
+    onDoubleClick={[Function]}
   >
     
   </span>
@@ -78,7 +78,6 @@ exports[`ListItem Component should checkbox and text be unchecked and empty 1`] 
 exports[`ListItem Component should checkbox and text be unchecked and not empty 1`] = `
 <li
   className="sc-EHOje lhpJrP"
-  onDoubleClick={[Function]}
 >
   <button
     checked={false}
@@ -88,6 +87,7 @@ exports[`ListItem Component should checkbox and text be unchecked and not empty 
   <span
     checked={false}
     className="sc-ifAKCX kENJqM"
+    onDoubleClick={[Function]}
   >
     some text
   </span>
