@@ -115,7 +115,7 @@ export default class List extends React.PureComponent<Props, State> {
 
   countItemsLeft = () => {
     const { list } = this.props;
-    return list.filter(item => !item.isDone).reduce(acc => acc + 1, 0);
+    return list.reduce((acc, { isDone }) => (!isDone ? acc + 1 : acc), 0);
   };
 
   render() {
