@@ -113,9 +113,15 @@ export default class List extends React.PureComponent<Props, State> {
     return list.find(item => item.isDone);
   };
 
+  countItemsLeft = () => {
+    const { list } = this.props;
+    return list.filter(item => !item.isDone).reduce(acc => acc + 1, 0);
+  };
+
   render() {
     const { onEditItem, onRemoveItem, onCloseItem, onClear } = this.props;
     const { list, visibility } = this.state;
+    const itemsLeft = this.countItemsLeft();
     return (
       <Container>
         <Content>
@@ -132,7 +138,7 @@ export default class List extends React.PureComponent<Props, State> {
           ))}
         </Content>
         <Footer>
-          <Info>{`${list.length} ${pluralize(list.length, 'item')}`}</Info>
+          <Info>{`${itemsLeft} ${pluralize(itemsLeft, 'item')} left`}</Info>
           <FilterMenu>
             <Option
               href={'#'}
