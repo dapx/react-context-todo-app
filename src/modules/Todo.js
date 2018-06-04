@@ -5,9 +5,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import uuid from 'uuid/v4';
+import _ from 'lodash';
+import { loadData, saveData } from './Storage';
 
 const { Provider, Consumer } = React.createContext();
 
+const debouncedSave = _.debounce(saveData, 300);
 /**
  * A component that stores a global state and
  * provides methods to change its state.
@@ -18,14 +21,19 @@ const { Provider, Consumer } = React.createContext();
  */
 class TodoProvider extends React.PureComponent {
   state = {
-    list: []
+    list: loadData('list')
+  };
+
+  saveList = list => {
+    this.setState({ list });
+    debouncedSave('list', list);
   };
 
   // Set a new list with the new todo.
   handleAdd = text => {
     const newTodo = { id: uuid(), text, done: false };
     const list = [newTodo, ...this.state.list];
-    this.setState({ list });
+    this.saveList(list);
   };
 
   // Set a new list with the updated todo.
@@ -41,7 +49,7 @@ class TodoProvider extends React.PureComponent {
       },
       ...list.slice(index + 1)
     ];
-    this.setState({ list: newList });
+    this.saveList(newList);
   };
 
   // Set a new list without the removed todo.
@@ -49,7 +57,7 @@ class TodoProvider extends React.PureComponent {
     const { list } = this.state;
     const index = list.findIndex(item => item.id === id);
     const newList = [...list.slice(0, index), ...list.slice(index + 1)];
-    this.setState({ list: newList });
+    this.saveList(newList);
   };
 
   // Set a new list with a new item done.
@@ -65,14 +73,14 @@ class TodoProvider extends React.PureComponent {
       },
       ...list.slice(index + 1)
     ];
-    this.setState({ list: newList });
+    this.saveList(newList);
   };
 
   // Set a new list without items done.
   handleClear = () => {
     const { list } = this.state;
     const newList = list.filter(({ isDone }) => !isDone);
-    this.setState({ list: newList });
+    this.saveList(newList);
   };
 
   // Returns a handler object list to pass inside the provider context
