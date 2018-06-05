@@ -5,7 +5,7 @@ import Button from './Button';
 import AcceptIcon from '../accept-icon.png';
 import type { Todo, Event } from '../flowtypes';
 
-const InputText = styled.input`
+export const InputText = styled.input`
   display: flex;
   flex: 1;
   font-size: 24px;
@@ -42,7 +42,7 @@ export const Text = styled.span`
     `};
 `;
 
-const Item = styled.li`
+export const Item = styled.li`
   display: flex;
   flex: 1;
   flex-wrap: wrap;
@@ -138,18 +138,26 @@ class ListItem extends React.PureComponent<Props, State> {
       const { id, onEdit, checked } = this.props;
 
       onEdit({ id, text, isDone: checked });
-      this.onBlur();
+      this.handleBlur();
     } else if (evt.key === 'Escape') {
       const { text } = this.props;
 
       this.setState({ text });
-      this.onBlur();
+      this.handleBlur();
     }
   };
 
-  onChange = (evt: Event) => this.setState({ text: evt.target.value });
-  onDoubleClick = () => this.setState({ isEditing: true });
-  onBlur = () => this.setState({ isEditing: false });
+  onBlur = () => {
+    const { text } = this.state;
+    const { id, onEdit, checked } = this.props;
+
+    onEdit({ id, text, isDone: checked });
+    this.handleBlur();
+  };
+
+  handleChange = (evt: Event) => this.setState({ text: evt.target.value });
+  handleDoubleClick = () => this.setState({ isEditing: true });
+  handleBlur = () => this.setState({ isEditing: false });
 
   onClose = () => {
     const { id, onClose } = this.props;
@@ -169,7 +177,7 @@ class ListItem extends React.PureComponent<Props, State> {
         <Item onBlur={this.onBlur}>
           <InputText
             onKeyDown={this.handleKeyPress}
-            onChange={this.onChange}
+            onChange={this.handleChange}
             value={text}
             autoFocus={true}
           />
@@ -179,7 +187,7 @@ class ListItem extends React.PureComponent<Props, State> {
     return (
       <Item>
         <CheckBox onClick={this.onClose} checked={checked} />
-        <Text onDoubleClick={this.onDoubleClick} checked={checked}>
+        <Text onDoubleClick={this.handleDoubleClick} checked={checked}>
           {text}
         </Text>
         <RemoveButton onClick={this.onRemove}>{'X'}</RemoveButton>
