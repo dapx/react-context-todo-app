@@ -2,7 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { mount } from 'enzyme';
 import renderer from 'react-test-renderer';
-import ListItem, { CheckBox, Text, RemoveButton } from '../ListItem';
+import ListItem, {
+  CheckBox,
+  Text,
+  RemoveButton,
+  InputText,
+  Item
+} from '../ListItem';
 
 describe('ListItem Component', () => {
   it('renders without crashing', () => {
@@ -23,12 +29,14 @@ describe('ListItem Component', () => {
     it('onClose when clicking on the checkbox', () => {
       const handleClose = jest.fn();
       const handleRemove = jest.fn();
+      const handleEdit = jest.fn();
       const wrapper = mount(
         <ListItem
           id={'some-id'}
           text={'some text'}
           onClose={handleClose}
           onRemove={handleRemove}
+          onEdit={handleEdit}
           checked={false}
         />
       );
@@ -36,11 +44,13 @@ describe('ListItem Component', () => {
       checkbox.simulate('click');
       expect(handleClose.mock.calls.length).toEqual(1);
       expect(handleRemove.mock.calls.length).toEqual(0);
+      expect(handleEdit.mock.calls.length).toEqual(0);
     });
 
     it('onRemove when clicking on the removeButton', () => {
       const handleClose = jest.fn();
       const handleRemove = jest.fn();
+      const handleEdit = jest.fn();
       const wrapper = mount(
         <ListItem
           id={'some-id'}
@@ -54,6 +64,72 @@ describe('ListItem Component', () => {
       removeButton.simulate('click');
       expect(handleClose.mock.calls.length).toEqual(0);
       expect(handleRemove.mock.calls.length).toEqual(1);
+      expect(handleEdit.mock.calls.length).toEqual(0);
+    });
+
+    it('onEdit when press enter on InputText', () => {
+      const handleClose = jest.fn();
+      const handleRemove = jest.fn();
+      const handleEdit = jest.fn();
+      const wrapper = mount(
+        <ListItem
+          id={'some-id'}
+          text={'some text'}
+          onClose={handleClose}
+          onRemove={handleRemove}
+          onEdit={handleEdit}
+          checked={false}
+        />
+      );
+      const text = wrapper.find(Text);
+      expect(text).toExist();
+      text.simulate('dblclick');
+
+      const input = wrapper.find(InputText);
+      expect(input).toExist();
+      expect(handleEdit.mock.calls.length).toBe(0);
+
+      input.simulate('change', { target: { value: 'some new text' } });
+      expect(wrapper.state('text')).toBe('some new text');
+      expect(handleEdit.mock.calls.length).toBe(0);
+
+      input.simulate('keydown', { key: 'Enter' });
+      expect(handleEdit.mock.calls.length).toBe(1);
+      expect(handleClose.mock.calls.length).toBe(0);
+      expect(handleRemove.mock.calls.length).toBe(0);
+    });
+
+    it('onEdit when blur on InputText', () => {
+      const handleClose = jest.fn();
+      const handleRemove = jest.fn();
+      const handleEdit = jest.fn();
+      const wrapper = mount(
+        <ListItem
+          id={'some-id'}
+          text={'some text'}
+          onClose={handleClose}
+          onRemove={handleRemove}
+          onEdit={handleEdit}
+          checked={false}
+        />
+      );
+      const text = wrapper.find(Text);
+      expect(text).toExist();
+      text.simulate('dblclick');
+
+      const input = wrapper.find(InputText);
+      expect(input).toExist();
+      expect(handleEdit.mock.calls.length).toBe(0);
+
+      input.simulate('change', { target: { value: 'some new text' } });
+      expect(wrapper.state('text')).toBe('some new text');
+      expect(handleEdit.mock.calls.length).toBe(0);
+
+      const item = wrapper.find(Item);
+      item.simulate('blur');
+      expect(handleEdit.mock.calls.length).toBe(1);
+      expect(handleClose.mock.calls.length).toBe(0);
+      expect(handleRemove.mock.calls.length).toBe(0);
     });
   });
 
