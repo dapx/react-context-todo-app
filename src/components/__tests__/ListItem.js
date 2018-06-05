@@ -42,9 +42,9 @@ describe('ListItem Component', () => {
       );
       const checkbox = wrapper.find(CheckBox);
       checkbox.simulate('click');
-      expect(handleClose.mock.calls.length).toEqual(1);
-      expect(handleRemove.mock.calls.length).toEqual(0);
-      expect(handleEdit.mock.calls.length).toEqual(0);
+      expect(handleClose.mock.calls.length).toBe(1);
+      expect(handleRemove.mock.calls.length).toBe(0);
+      expect(handleEdit.mock.calls.length).toBe(0);
     });
 
     it('onRemove when clicking on the removeButton', () => {
@@ -62,9 +62,9 @@ describe('ListItem Component', () => {
       );
       const removeButton = wrapper.find(RemoveButton);
       removeButton.simulate('click');
-      expect(handleClose.mock.calls.length).toEqual(0);
-      expect(handleRemove.mock.calls.length).toEqual(1);
-      expect(handleEdit.mock.calls.length).toEqual(0);
+      expect(handleClose.mock.calls.length).toBe(0);
+      expect(handleRemove.mock.calls.length).toBe(1);
+      expect(handleEdit.mock.calls.length).toBe(0);
     });
 
     it('onEdit when press enter on InputText', () => {
@@ -152,8 +152,8 @@ describe('ListItem Component', () => {
       const isCheckBoxChecked = checkbox.prop('checked');
       const isTextChecked = text.prop('checked');
 
-      expect(isCheckBoxChecked).toBe(false);
-      expect(isTextChecked).toBe(false);
+      expect(isCheckBoxChecked).toBeFalsy();
+      expect(isTextChecked).toBeFalsy();
       expect(isCheckBoxChecked).toBe(isTextChecked);
     });
 
@@ -205,8 +205,8 @@ describe('ListItem Component', () => {
       const isCheckBoxChecked = checkbox.prop('checked');
       const isTextChecked = text.prop('checked');
 
-      expect(isCheckBoxChecked).toBe(true);
-      expect(isTextChecked).toBe(true);
+      expect(isCheckBoxChecked).toBeTruthy();
+      expect(isTextChecked).toBeTruthy();
       expect(isCheckBoxChecked).toBe(isTextChecked);
     });
 
