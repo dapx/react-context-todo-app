@@ -1,0 +1,340 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List Component should be empty and hide clear completed button 1`] = `
+<div
+  className="sc-dnqmqq bVEpG"
+>
+  <div
+    className="sc-iwsKbI ghkLMK"
+  />
+  <div
+    className="sc-gqjmRU dOQKBh"
+  >
+    <span
+      className="sc-VigVT lbrqEn"
+    >
+      0 items left
+    </span>
+    <div
+      className="sc-gZMcBi kgBKRm"
+    >
+      <a
+        className="sc-htoDjs ksTODm"
+        href="#"
+        onClick={[Function]}
+      >
+        All
+      </a>
+      <a
+        className="sc-htoDjs jCmNzT"
+        href="#/active"
+        onClick={[Function]}
+      >
+        Active
+      </a>
+      <a
+        className="sc-htoDjs jCmNzT"
+        href="#/completed"
+        onClick={[Function]}
+      >
+        Completed
+      </a>
+    </div>
+    <button
+      className="sc-jTzLTM oYfQt"
+      hidden={true}
+      onClick={undefined}
+    >
+      Clear completed
+    </button>
+  </div>
+</div>
+`;
+
+exports[`List Component should render one todo item and one completed 1`] = `
+<div
+  className="sc-dnqmqq bVEpG"
+>
+  <div
+    className="sc-iwsKbI ghkLMK"
+  >
+    <li
+      className="sc-EHOje lhpJrP"
+    >
+      <button
+        checked={false}
+        className="sc-bZQynM bmWDER"
+        onClick={[Function]}
+      />
+      <span
+        checked={false}
+        className="sc-ifAKCX kENJqM"
+        onDoubleClick={[Function]}
+      >
+        todo 1
+      </span>
+      <button
+        className="sc-gzVnrw dTBaCJ"
+        onClick={[Function]}
+      >
+        X
+      </button>
+    </li>
+    <li
+      className="sc-EHOje lhpJrP"
+    >
+      <button
+        checked={true}
+        className="sc-bZQynM kWRFME"
+        onClick={[Function]}
+      />
+      <span
+        checked={true}
+        className="sc-ifAKCX dpBAuT"
+        onDoubleClick={[Function]}
+      >
+        todo 2
+      </span>
+      <button
+        className="sc-gzVnrw dTBaCJ"
+        onClick={[Function]}
+      >
+        X
+      </button>
+    </li>
+  </div>
+  <div
+    className="sc-gqjmRU dOQKBh"
+  >
+    <span
+      className="sc-VigVT lbrqEn"
+    >
+      1 item left
+    </span>
+    <div
+      className="sc-gZMcBi kgBKRm"
+    >
+      <a
+        className="sc-htoDjs ksTODm"
+        href="#"
+        onClick={[Function]}
+      >
+        All
+      </a>
+      <a
+        className="sc-htoDjs jCmNzT"
+        href="#/active"
+        onClick={[Function]}
+      >
+        Active
+      </a>
+      <a
+        className="sc-htoDjs jCmNzT"
+        href="#/completed"
+        onClick={[Function]}
+      >
+        Completed
+      </a>
+    </div>
+    <button
+      className="sc-jTzLTM iqCtJN"
+      hidden={false}
+      onClick={undefined}
+    >
+      Clear completed
+    </button>
+  </div>
+</div>
+`;
+
+exports[`List Component should render two completed todo items and hide clear completed button 1`] = `
+<div
+  className="sc-dnqmqq bVEpG"
+>
+  <div
+    className="sc-iwsKbI ghkLMK"
+  >
+    <li
+      className="sc-EHOje lhpJrP"
+    >
+      <button
+        checked={true}
+        className="sc-bZQynM kWRFME"
+        onClick={[Function]}
+      />
+      <span
+        checked={true}
+        className="sc-ifAKCX dpBAuT"
+        onDoubleClick={[Function]}
+      >
+        todo 1
+      </span>
+      <button
+        className="sc-gzVnrw dTBaCJ"
+        onClick={[Function]}
+      >
+        X
+      </button>
+    </li>
+    <li
+      className="sc-EHOje lhpJrP"
+    >
+      <button
+        checked={true}
+        className="sc-bZQynM kWRFME"
+        onClick={[Function]}
+      />
+      <span
+        checked={true}
+        className="sc-ifAKCX dpBAuT"
+        onDoubleClick={[Function]}
+      >
+        todo 2
+      </span>
+      <button
+        className="sc-gzVnrw dTBaCJ"
+        onClick={[Function]}
+      >
+        X
+      </button>
+    </li>
+  </div>
+  <div
+    className="sc-gqjmRU dOQKBh"
+  >
+    <span
+      className="sc-VigVT lbrqEn"
+    >
+      0 items left
+    </span>
+    <div
+      className="sc-gZMcBi kgBKRm"
+    >
+      <a
+        className="sc-htoDjs ksTODm"
+        href="#"
+        onClick={[Function]}
+      >
+        All
+      </a>
+      <a
+        className="sc-htoDjs jCmNzT"
+        href="#/active"
+        onClick={[Function]}
+      >
+        Active
+      </a>
+      <a
+        className="sc-htoDjs jCmNzT"
+        href="#/completed"
+        onClick={[Function]}
+      >
+        Completed
+      </a>
+    </div>
+    <button
+      className="sc-jTzLTM iqCtJN"
+      hidden={false}
+      onClick={undefined}
+    >
+      Clear completed
+    </button>
+  </div>
+</div>
+`;
+
+exports[`List Component should render two todo items 1`] = `
+<div
+  className="sc-dnqmqq bVEpG"
+>
+  <div
+    className="sc-iwsKbI ghkLMK"
+  >
+    <li
+      className="sc-EHOje lhpJrP"
+    >
+      <button
+        checked={false}
+        className="sc-bZQynM bmWDER"
+        onClick={[Function]}
+      />
+      <span
+        checked={false}
+        className="sc-ifAKCX kENJqM"
+        onDoubleClick={[Function]}
+      >
+        todo 1
+      </span>
+      <button
+        className="sc-gzVnrw dTBaCJ"
+        onClick={[Function]}
+      >
+        X
+      </button>
+    </li>
+    <li
+      className="sc-EHOje lhpJrP"
+    >
+      <button
+        checked={false}
+        className="sc-bZQynM bmWDER"
+        onClick={[Function]}
+      />
+      <span
+        checked={false}
+        className="sc-ifAKCX kENJqM"
+        onDoubleClick={[Function]}
+      >
+        todo 2
+      </span>
+      <button
+        className="sc-gzVnrw dTBaCJ"
+        onClick={[Function]}
+      >
+        X
+      </button>
+    </li>
+  </div>
+  <div
+    className="sc-gqjmRU dOQKBh"
+  >
+    <span
+      className="sc-VigVT lbrqEn"
+    >
+      2 items left
+    </span>
+    <div
+      className="sc-gZMcBi kgBKRm"
+    >
+      <a
+        className="sc-htoDjs ksTODm"
+        href="#"
+        onClick={[Function]}
+      >
+        All
+      </a>
+      <a
+        className="sc-htoDjs jCmNzT"
+        href="#/active"
+        onClick={[Function]}
+      >
+        Active
+      </a>
+      <a
+        className="sc-htoDjs jCmNzT"
+        href="#/completed"
+        onClick={[Function]}
+      >
+        Completed
+      </a>
+    </div>
+    <button
+      className="sc-jTzLTM oYfQt"
+      hidden={true}
+      onClick={undefined}
+    >
+      Clear completed
+    </button>
+  </div>
+</div>
+`;
