@@ -31,7 +31,7 @@ class TodoProvider extends React.PureComponent {
 
   // Set a new list with the new todo.
   handleAdd = text => {
-    const newTodo = { id: uuid(), text, done: false };
+    const newTodo = { id: uuid(), text, isDone: false };
     const list = [newTodo, ...this.state.list];
     this.saveList(list);
   };
