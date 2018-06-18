@@ -7,6 +7,7 @@ import PropTypes from 'prop-types';
 import uuid from 'uuid/v4';
 import _ from 'lodash';
 import { loadData, saveData } from './Storage';
+import { VisibilityFilter } from './List';
 
 const { Provider, Consumer } = React.createContext();
 
@@ -21,7 +22,24 @@ const debouncedSave = _.debounce(saveData, 300);
  */
 class TodoProvider extends React.PureComponent {
   state = {
-    list: loadData('list')
+    list: loadData('list'),
+    visibility: VisibilityFilter.NONE
+  };
+
+  componentDidMount() {
+    window.addEventListener('hashchange', this.handleHashChange);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('hashchange', this.handleHashChange);
+  }
+
+  handleHashChange = () => {
+    const suffix = window.location.hash.replace(/^#\//, '');
+    const isValidSuffix =
+      VisibilityFilter.TODO === suffix || VisibilityFilter.DONE === suffix;
+    const visibility = isValidSuffix ? suffix : VisibilityFilter.NONE;
+    this.setState({ visibility });
   };
 
   saveList = list => {
@@ -121,7 +139,14 @@ export function withTodos(Component) {
   return function TodosComponent(props) {
     return (
       <Consumer>
-        {({ list, handleEdit, handleClose, handleRemove, handleClear }) => (
+        {({
+          list,
+          visibility,
+          handleEdit,
+          handleClose,
+          handleRemove,
+          handleClear
+        }) => (
           <Component
             {...props}
             onEditItem={handleEdit}
@@ -129,6 +154,7 @@ export function withTodos(Component) {
             onRemoveItem={handleRemove}
             onClear={handleClear}
             list={list}
+            visibility={visibility}
           />
         )}
       </Consumer>

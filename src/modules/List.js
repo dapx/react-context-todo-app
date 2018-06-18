@@ -4,9 +4,9 @@
  */
 
 export const VisibilityFilter = {
-  NONE: 'NONE',
-  DONE: 'DONE',
-  TODO: 'TODO'
+  NONE: '',
+  DONE: 'completed',
+  TODO: 'active'
 };
 
 export function filterListByVisibility(list = [], visibility) {
