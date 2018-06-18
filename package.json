@@ -7,6 +7,7 @@
     "enzyme-adapter-react-16": "npm:enzyme-react-adapter-future",
     "jest-enzyme": "^6.0.1",
     "lodash": "^4.17.10",
+    "memoize-one": "^3.1.1",
     "prop-types": "^15.6.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",

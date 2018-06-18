@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
 import List from '../List';
+import ListItem from '../ListItem';
 
 describe('List Component', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<List list={[]} onClick={() => {}} />, div);
+    ReactDOM.render(<List list={[]} visibility={''} />, div);
   });
 
   it('should filter all todo items', () => {
@@ -16,14 +17,11 @@ describe('List Component', () => {
       { id: 'some-id-2', text: 'todo 2', isDone: true },
       { id: 'some-id-3', text: 'todo 3', isDone: false }
     ];
-    const wrapper = mount(<List list={list} />);
-    expect(wrapper.state('list').length).toBe(3);
+    const wrapper = mount(<List list={list} visibility={''} />);
+    expect(wrapper.prop('list').length).toBe(3);
 
-    const completedFilter = wrapper.find('[href="#"]').find('a');
-    expect(completedFilter).toExist();
-
-    completedFilter.simulate('click');
-    expect(wrapper.state('list').length).toBe(3);
+    wrapper.setProps({ visibility: 'whatever' });
+    expect(wrapper.find(ListItem).length).toBe(3);
   });
 
   it('should filter completed todo items', () => {
@@ -32,14 +30,9 @@ describe('List Component', () => {
       { id: 'some-id-2', text: 'todo 2', isDone: true },
       { id: 'some-id-3', text: 'todo 3', isDone: false }
     ];
-    const wrapper = mount(<List list={list} />);
-    expect(wrapper.state('list').length).toBe(3);
-
-    const completedFilter = wrapper.find('[href="#/completed"]').find('a');
-    expect(completedFilter).toExist();
-
-    completedFilter.simulate('click');
-    expect(wrapper.state('list').length).toBe(1);
+    const wrapper = mount(<List list={list} visibility={'completed'} />);
+    expect(wrapper.prop('list').length).toBe(3);
+    expect(wrapper.find(ListItem).length).toBe(1);
   });
 
   it('should filter active todo items', () => {
@@ -48,14 +41,9 @@ describe('List Component', () => {
       { id: 'some-id-2', text: 'todo 2', isDone: true },
       { id: 'some-id-3', text: 'todo 3', isDone: false }
     ];
-    const wrapper = mount(<List list={list} />);
-    expect(wrapper.state('list').length).toBe(3);
-
-    const completedFilter = wrapper.find('[href="#/active"]').find('a');
-    expect(completedFilter).toExist();
-
-    completedFilter.simulate('click');
-    expect(wrapper.state('list').length).toBe(2);
+    const wrapper = mount(<List list={list} visibility={'active'} />);
+    expect(wrapper.prop('list').length).toBe(3);
+    expect(wrapper.find(ListItem).length).toBe(2);
   });
 
   it('should be empty and hide clear completed button', () => {

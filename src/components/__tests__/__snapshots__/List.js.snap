@@ -19,23 +19,20 @@ exports[`List Component should be empty and hide clear completed button 1`] = `
       className="sc-gZMcBi kgBKRm"
     >
       <a
-        className="sc-htoDjs ksTODm"
+        className="sc-htoDjs jCmNzT"
         href="#"
-        onClick={[Function]}
       >
         All
       </a>
       <a
         className="sc-htoDjs jCmNzT"
         href="#/active"
-        onClick={[Function]}
       >
         Active
       </a>
       <a
         className="sc-htoDjs jCmNzT"
         href="#/completed"
-        onClick={[Function]}
       >
         Completed
       </a>
@@ -115,23 +112,20 @@ exports[`List Component should render one todo item and one completed 1`] = `
       className="sc-gZMcBi kgBKRm"
     >
       <a
-        className="sc-htoDjs ksTODm"
+        className="sc-htoDjs jCmNzT"
         href="#"
-        onClick={[Function]}
       >
         All
       </a>
       <a
         className="sc-htoDjs jCmNzT"
         href="#/active"
-        onClick={[Function]}
       >
         Active
       </a>
       <a
         className="sc-htoDjs jCmNzT"
         href="#/completed"
-        onClick={[Function]}
       >
         Completed
       </a>
@@ -211,23 +205,20 @@ exports[`List Component should render two completed todo items and hide clear co
       className="sc-gZMcBi kgBKRm"
     >
       <a
-        className="sc-htoDjs ksTODm"
+        className="sc-htoDjs jCmNzT"
         href="#"
-        onClick={[Function]}
       >
         All
       </a>
       <a
         className="sc-htoDjs jCmNzT"
         href="#/active"
-        onClick={[Function]}
       >
         Active
       </a>
       <a
         className="sc-htoDjs jCmNzT"
         href="#/completed"
-        onClick={[Function]}
       >
         Completed
       </a>
@@ -307,23 +298,20 @@ exports[`List Component should render two todo items 1`] = `
       className="sc-gZMcBi kgBKRm"
     >
       <a
-        className="sc-htoDjs ksTODm"
+        className="sc-htoDjs jCmNzT"
         href="#"
-        onClick={[Function]}
       >
         All
       </a>
       <a
         className="sc-htoDjs jCmNzT"
         href="#/active"
-        onClick={[Function]}
       >
         Active
       </a>
       <a
         className="sc-htoDjs jCmNzT"
         href="#/completed"
-        onClick={[Function]}
       >
         Completed
       </a>

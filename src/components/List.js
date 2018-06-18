@@ -1,6 +1,7 @@
 // @flow
 import * as React from 'react';
 import styled from 'styled-components';
+import memoize from 'memoize-one';
 import ListItem from './ListItem';
 import Option from './MenuOption';
 import type { Todo } from '../flowtypes';
@@ -68,6 +69,7 @@ const ClearButton = Button.extend`
 
 type Props = {
   list: Todo[],
+  visibility: string,
   onEditItem: (item: Todo) => void,
   onRemoveItem: (index: string) => void,
   onCloseItem: (index: string) => void,
@@ -75,38 +77,16 @@ type Props = {
 };
 
 type State = {
-  list: Todo[],
-  visibility: string
+  list: Todo[]
 };
 
 /**
  * List component to render todo items
  */
 export default class List extends React.PureComponent<Props, State> {
-  state = {
-    list: [],
-    visibility: Visibility.NONE
-  };
-
-  static getDerivedStateFromProps(nextProps: Props, prevState: State) {
-    const { list: oldList, visibility } = prevState;
-    const { list } = nextProps;
-
-    if (oldList !== list) {
-      return { list: filterListByVisibility(list, visibility), visibility };
-    }
-    return null;
-  }
-
-  onChangeVisibility = (visibility: string) => {
-    const { list: currentList } = this.props;
-    const list = filterListByVisibility(currentList, visibility);
-    this.setState({ list, visibility });
-  };
-
-  setNoneVisibility = () => this.onChangeVisibility(Visibility.NONE);
-  setTodoVisibility = () => this.onChangeVisibility(Visibility.TODO);
-  setDoneVisibility = () => this.onChangeVisibility(Visibility.DONE);
+  filter = memoize((list, visibility) =>
+    filterListByVisibility(list, visibility)
+  );
 
   hasCompleted = () => {
     const { list } = this.props;
@@ -119,13 +99,20 @@ export default class List extends React.PureComponent<Props, State> {
   };
 
   render() {
-    const { onEditItem, onRemoveItem, onCloseItem, onClear } = this.props;
-    const { list, visibility } = this.state;
+    const {
+      list,
+      visibility,
+      onEditItem,
+      onRemoveItem,
+      onCloseItem,
+      onClear
+    } = this.props;
+    const filteredList = this.filter(list, visibility);
     const itemsLeft = this.countItemsLeft();
     return (
       <Container>
         <Content>
-          {list.map(item => (
+          {filteredList.map(item => (
             <ListItem
               id={item.id}
               key={`${item.id}`}
@@ -140,23 +127,17 @@ export default class List extends React.PureComponent<Props, State> {
         <Footer>
           <Info>{`${itemsLeft} ${pluralize(itemsLeft, 'item')} left`}</Info>
           <FilterMenu>
-            <Option
-              href={'#'}
-              onClick={this.setNoneVisibility}
-              enabled={visibility === Visibility.NONE}
-            >
+            <Option href={'#'} enabled={visibility === Visibility.NONE}>
               {'All'}
             </Option>
             <Option
-              href={'#/active'}
-              onClick={this.setTodoVisibility}
+              href={`#/${Visibility.TODO}`}
               enabled={visibility === Visibility.TODO}
             >
               {'Active'}
             </Option>
             <Option
-              href={'#/completed'}
-              onClick={this.setDoneVisibility}
+              href={`#/${Visibility.DONE}`}
               enabled={visibility === Visibility.DONE}
             >
               {'Completed'}
