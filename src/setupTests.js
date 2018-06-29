@@ -8,4 +8,11 @@ const localStorageMock = {
   setItem: jest.fn(),
   clear: jest.fn()
 };
+
+const changeUrlHash = hash => {
+  global.window.location.href = `http://localhost/#/${hash}`;
+  global.window.dispatchEvent(new Event('hashchange'));
+};
+
+global.window.changeUrlHash = changeUrlHash;
 global.localStorage = localStorageMock;
