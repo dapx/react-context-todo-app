@@ -5,6 +5,8 @@ import './App.css';
 import TodoProvider, { withAdd, withTodos } from './modules/Todo';
 import InputText from './components/InputText';
 import List from './components/List';
+import RouterProvider, { withRouter } from './modules/Router';
+import Visibility from './modules/Visibility';
 
 const Window = styled.div`
   display: flex;
@@ -44,6 +46,7 @@ const Title = styled.h1`
   text-rendering: optimizeLegibility;
 `;
 
+const RoutedVisibility = withRouter(Visibility);
 const TodoInput = withAdd(InputText);
 const TodoList = withTodos(List);
 
@@ -58,10 +61,16 @@ class App extends Component<Props> {
             <Title>todos</Title>
           </Header>
           <Paper>
-            <TodoProvider>
-              <TodoInput />
-              <TodoList />
-            </TodoProvider>
+            <RouterProvider>
+              <RoutedVisibility
+                render={({ visibility }) => (
+                  <TodoProvider visibility={visibility}>
+                    <TodoInput />
+                    <TodoList />
+                  </TodoProvider>
+                )}
+              />
+            </RouterProvider>
           </Paper>
         </Container>
       </Window>
