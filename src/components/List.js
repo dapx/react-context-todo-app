@@ -5,11 +5,8 @@ import memoize from 'memoize-one';
 import ListItem from './ListItem';
 import Option from './MenuOption';
 import type { Todo } from '../flowtypes';
-import {
-  VisibilityFilter as Visibility,
-  filterListByVisibility,
-  pluralize
-} from '../modules/List';
+import { filterListByVisibility, pluralize } from '../modules/List';
+import { VisibilityFilter as Visibility } from '../modules/Visibility';
 import Button from './Button';
 
 const Container = styled.div`

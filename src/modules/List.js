@@ -2,12 +2,7 @@
  * This module provides useful pure functions
  * to obtain information from a todo List.
  */
-
-export const VisibilityFilter = {
-  NONE: '',
-  DONE: 'completed',
-  TODO: 'active'
-};
+import { VisibilityFilter } from './Visibility';
 
 export function filterListByVisibility(list = [], visibility) {
   switch (visibility) {

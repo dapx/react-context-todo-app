@@ -1,8 +1,5 @@
-import {
-  pluralize,
-  VisibilityFilter as Visibility,
-  filterListByVisibility
-} from '../List';
+import { pluralize, filterListByVisibility } from '../List';
+import { VisibilityFilter as Visibility } from '../Visibility';
 
 describe('list module', () => {
   describe('pluralize', () => {
