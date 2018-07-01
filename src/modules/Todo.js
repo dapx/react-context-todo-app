@@ -7,7 +7,6 @@ import PropTypes from 'prop-types';
 import uuid from 'uuid/v4';
 import _ from 'lodash';
 import { loadData, saveData } from './Storage';
-import { VisibilityFilter } from './List';
 
 const { Provider, Consumer } = React.createContext();
 
@@ -23,23 +22,7 @@ const debouncedSave = _.debounce(saveData, 300);
 class TodoProvider extends React.PureComponent {
   state = {
     list: loadData('list'),
-    visibility: VisibilityFilter.NONE
-  };
-
-  componentDidMount() {
-    window.addEventListener('hashchange', this.handleHashChange);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('hashchange', this.handleHashChange);
-  }
-
-  handleHashChange = () => {
-    const suffix = window.location.hash.replace(/^#\//, '');
-    const isValidSuffix =
-      VisibilityFilter.TODO === suffix || VisibilityFilter.DONE === suffix;
-    const visibility = isValidSuffix ? suffix : VisibilityFilter.NONE;
-    this.setState({ visibility });
+    visibility: ''
   };
 
   saveList = list => {
@@ -111,15 +94,18 @@ class TodoProvider extends React.PureComponent {
   });
 
   render() {
+    const { visibility } = this.props;
     const context = {
       ...this.getHandlers(),
-      ...this.state
+      ...this.state,
+      visibility
     };
     return <Provider value={context}>{this.props.children}</Provider>;
   }
 }
 
 TodoProvider.propTypes = {
+  visibility: PropTypes.string,
   children: PropTypes.node
 };
 
