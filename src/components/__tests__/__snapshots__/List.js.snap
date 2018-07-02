@@ -65,7 +65,7 @@ exports[`List Component should render one todo item and one completed 1`] = `
       />
       <span
         checked={false}
-        className="sc-ifAKCX kENJqM"
+        className="sc-ifAKCX cqwElN"
         onDoubleClick={[Function]}
       >
         todo 1
@@ -87,7 +87,7 @@ exports[`List Component should render one todo item and one completed 1`] = `
       />
       <span
         checked={true}
-        className="sc-ifAKCX dpBAuT"
+        className="sc-ifAKCX clBMZx"
         onDoubleClick={[Function]}
       >
         todo 2
@@ -158,7 +158,7 @@ exports[`List Component should render two completed todo items and hide clear co
       />
       <span
         checked={true}
-        className="sc-ifAKCX dpBAuT"
+        className="sc-ifAKCX clBMZx"
         onDoubleClick={[Function]}
       >
         todo 1
@@ -180,7 +180,7 @@ exports[`List Component should render two completed todo items and hide clear co
       />
       <span
         checked={true}
-        className="sc-ifAKCX dpBAuT"
+        className="sc-ifAKCX clBMZx"
         onDoubleClick={[Function]}
       >
         todo 2
@@ -251,7 +251,7 @@ exports[`List Component should render two todo items 1`] = `
       />
       <span
         checked={false}
-        className="sc-ifAKCX kENJqM"
+        className="sc-ifAKCX cqwElN"
         onDoubleClick={[Function]}
       >
         todo 1
@@ -273,7 +273,7 @@ exports[`List Component should render two todo items 1`] = `
       />
       <span
         checked={false}
-        className="sc-ifAKCX kENJqM"
+        className="sc-ifAKCX cqwElN"
         onDoubleClick={[Function]}
       >
         todo 2

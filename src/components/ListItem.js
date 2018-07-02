@@ -32,6 +32,11 @@ export const Text = styled.span`
   font-size: 24px;
   word-wrap: break-word;
   word-break: break-word;
+  border: 1px dashed transparent;
+
+  &:hover {
+    border-color: rgba(175, 47, 47, 0.5);
+  }
 
   ${({ checked }) =>
     checked &&

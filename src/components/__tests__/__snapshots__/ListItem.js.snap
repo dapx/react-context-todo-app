@@ -11,7 +11,7 @@ exports[`ListItem Component should checkbox and text be checked and empty 1`] = 
   />
   <span
     checked={true}
-    className="sc-ifAKCX dpBAuT"
+    className="sc-ifAKCX clBMZx"
     onDoubleClick={[Function]}
   >
     
@@ -36,7 +36,7 @@ exports[`ListItem Component should checkbox and text be checked and not empty 1`
   />
   <span
     checked={true}
-    className="sc-ifAKCX dpBAuT"
+    className="sc-ifAKCX clBMZx"
     onDoubleClick={[Function]}
   >
     some text
@@ -61,7 +61,7 @@ exports[`ListItem Component should checkbox and text be unchecked and empty 1`] 
   />
   <span
     checked={false}
-    className="sc-ifAKCX kENJqM"
+    className="sc-ifAKCX cqwElN"
     onDoubleClick={[Function]}
   >
     
@@ -86,7 +86,7 @@ exports[`ListItem Component should checkbox and text be unchecked and not empty 
   />
   <span
     checked={false}
-    className="sc-ifAKCX kENJqM"
+    className="sc-ifAKCX cqwElN"
     onDoubleClick={[Function]}
   >
     some text
