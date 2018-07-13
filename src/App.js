@@ -62,14 +62,14 @@ class App extends Component<Props> {
           </Header>
           <Paper>
             <RouterProvider>
-              <RoutedVisibility
-                render={({ visibility }) => (
+              <RoutedVisibility>
+                {({ visibility }) => (
                   <TodoProvider visibility={visibility}>
                     <TodoInput />
                     <TodoList />
                   </TodoProvider>
                 )}
-              />
+              </RoutedVisibility>
             </RouterProvider>
           </Paper>
         </Container>

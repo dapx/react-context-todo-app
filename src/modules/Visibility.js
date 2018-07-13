@@ -25,11 +25,11 @@ export default class Visibility extends React.Component {
   render() {
     const { urlSuffix } = this.props;
     const visibility = this.getVisibility(urlSuffix);
-    return this.props.render({ visibility });
+    return this.props.children({ visibility });
   }
 }
 
 Visibility.propTypes = {
   urlSuffix: PropTypes.string.isRequired,
-  render: PropTypes.func.isRequired
+  children: PropTypes.func.isRequired
 };
