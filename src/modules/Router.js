@@ -5,8 +5,12 @@ const { Provider, Consumer } = React.createContext();
 
 class RouterProvider extends React.PureComponent {
   state = {
-    suffix: ''
+    suffix: this.getSuffix()
   };
+
+  getSuffix() {
+    return window.location.hash.replace(/^#\//, '');
+  }
 
   componentDidMount() {
     window.addEventListener('hashchange', this.handleHashChange);
@@ -17,7 +21,7 @@ class RouterProvider extends React.PureComponent {
   }
 
   handleHashChange = () => {
-    const suffix = window.location.hash.replace(/^#\//, '');
+    const suffix = this.getSuffix();
     this.setState({ suffix });
   };
 
