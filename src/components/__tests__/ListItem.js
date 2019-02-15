@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { mount } from 'enzyme';
 import renderer from 'react-test-renderer';
+import 'jest-styled-components';
 import ListItem, {
   CheckBox,
   Text,

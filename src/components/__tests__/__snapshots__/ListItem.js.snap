@@ -1,23 +1,198 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ListItem Component should checkbox and text be checked and empty 1`] = `
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 8;
+  -ms-flex: 8;
+  flex: 8;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding: 10px;
+  -webkit-transition: color 0.3s linear 0.2s;
+  transition: color 0.3s linear 0.2s;
+  font-size: 24px;
+  word-wrap: break-word;
+  word-break: break-word;
+  border: 1px dashed transparent;
+  -webkit-text-decoration: line-through;
+  text-decoration: line-through;
+  color: #ddd;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.c3:hover {
+  border-color: rgba(175,47,47,0.5);
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  overflow: hidden;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  list-style: none;
+  border-bottom: 1px solid #ddd;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1:last-child {
+  border-bottom: 0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #bfbfbf;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  -webkit-transition: visibility .4s linear,opacity .4s linear;
+  transition: visibility .4s linear,opacity .4s linear;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: white;
+  margin: 0.5em;
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 100%;
+  background-size: 0%;
+  background-image: url(accept-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: background-size 0.4s cubic-bezier(0.06,1.74,0.65,-1.14), background-color 0.4s ease 0.2s;
+  transition: background-size 0.4s cubic-bezier(0.06,1.74,0.65,-1.14), background-color 0.4s ease 0.2s;
+  background-color: rgba(175,47,47,0.5);
+  background-size: 50%;
+  -webkit-transition: background-size 0.4s cubic-bezier(0.6,-1,0.7,2), background-color 0.4s ease;
+  transition: background-size 0.4s cubic-bezier(0.6,-1,0.7,2), background-color 0.4s ease;
+}
+
+.c2:focus {
+  outline: 0;
+  border: 1px solid rgba(175,47,47,0.15);
+  box-shadow: 0 0 10px #e6e6e6;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #bfbfbf;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  -webkit-transition: visibility .4s linear,opacity .4s linear;
+  transition: visibility .4s linear,opacity .4s linear;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 10px;
+  max-width: 10px;
+  margin: 0.5em;
+  background-color: transparent;
+  border: 0;
+  font-size: 24px;
+  font-weight: 300;
+  color: transparent;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c4:focus {
+  outline: 0;
+  border: 1px solid rgba(175,47,47,0.15);
+  box-shadow: 0 0 10px #e6e6e6;
+}
+
+.c0:hover .c4 {
+  color: #cc9a9a;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c0:hover .c4:hover {
+  color: #af5b5e;
+}
+
 <li
-  className="sc-EHOje lhpJrP"
+  className="c0 c1"
 >
   <button
     checked={true}
-    className="sc-bZQynM kWRFME"
+    className="c2"
     onClick={[Function]}
   />
   <span
     checked={true}
-    className="sc-ifAKCX clBMZx"
+    className="c3"
     onDoubleClick={[Function]}
   >
     
   </span>
   <button
-    className="sc-gzVnrw dTBaCJ"
+    className="c4"
     onClick={[Function]}
   >
     X
@@ -26,23 +201,198 @@ exports[`ListItem Component should checkbox and text be checked and empty 1`] = 
 `;
 
 exports[`ListItem Component should checkbox and text be checked and not empty 1`] = `
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 8;
+  -ms-flex: 8;
+  flex: 8;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding: 10px;
+  -webkit-transition: color 0.3s linear 0.2s;
+  transition: color 0.3s linear 0.2s;
+  font-size: 24px;
+  word-wrap: break-word;
+  word-break: break-word;
+  border: 1px dashed transparent;
+  -webkit-text-decoration: line-through;
+  text-decoration: line-through;
+  color: #ddd;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.c3:hover {
+  border-color: rgba(175,47,47,0.5);
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  overflow: hidden;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  list-style: none;
+  border-bottom: 1px solid #ddd;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1:last-child {
+  border-bottom: 0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #bfbfbf;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  -webkit-transition: visibility .4s linear,opacity .4s linear;
+  transition: visibility .4s linear,opacity .4s linear;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: white;
+  margin: 0.5em;
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 100%;
+  background-size: 0%;
+  background-image: url(accept-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: background-size 0.4s cubic-bezier(0.06,1.74,0.65,-1.14), background-color 0.4s ease 0.2s;
+  transition: background-size 0.4s cubic-bezier(0.06,1.74,0.65,-1.14), background-color 0.4s ease 0.2s;
+  background-color: rgba(175,47,47,0.5);
+  background-size: 50%;
+  -webkit-transition: background-size 0.4s cubic-bezier(0.6,-1,0.7,2), background-color 0.4s ease;
+  transition: background-size 0.4s cubic-bezier(0.6,-1,0.7,2), background-color 0.4s ease;
+}
+
+.c2:focus {
+  outline: 0;
+  border: 1px solid rgba(175,47,47,0.15);
+  box-shadow: 0 0 10px #e6e6e6;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #bfbfbf;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  -webkit-transition: visibility .4s linear,opacity .4s linear;
+  transition: visibility .4s linear,opacity .4s linear;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 10px;
+  max-width: 10px;
+  margin: 0.5em;
+  background-color: transparent;
+  border: 0;
+  font-size: 24px;
+  font-weight: 300;
+  color: transparent;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c4:focus {
+  outline: 0;
+  border: 1px solid rgba(175,47,47,0.15);
+  box-shadow: 0 0 10px #e6e6e6;
+}
+
+.c0:hover .c4 {
+  color: #cc9a9a;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c0:hover .c4:hover {
+  color: #af5b5e;
+}
+
 <li
-  className="sc-EHOje lhpJrP"
+  className="c0 c1"
 >
   <button
     checked={true}
-    className="sc-bZQynM kWRFME"
+    className="c2"
     onClick={[Function]}
   />
   <span
     checked={true}
-    className="sc-ifAKCX clBMZx"
+    className="c3"
     onDoubleClick={[Function]}
   >
     some text
   </span>
   <button
-    className="sc-gzVnrw dTBaCJ"
+    className="c4"
     onClick={[Function]}
   >
     X
@@ -51,23 +401,189 @@ exports[`ListItem Component should checkbox and text be checked and not empty 1`
 `;
 
 exports[`ListItem Component should checkbox and text be unchecked and empty 1`] = `
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 8;
+  -ms-flex: 8;
+  flex: 8;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding: 10px;
+  -webkit-transition: color 0.3s linear 0.2s;
+  transition: color 0.3s linear 0.2s;
+  font-size: 24px;
+  word-wrap: break-word;
+  word-break: break-word;
+  border: 1px dashed transparent;
+}
+
+.c3:hover {
+  border-color: rgba(175,47,47,0.5);
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  overflow: hidden;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  list-style: none;
+  border-bottom: 1px solid #ddd;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1:last-child {
+  border-bottom: 0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #bfbfbf;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  -webkit-transition: visibility .4s linear,opacity .4s linear;
+  transition: visibility .4s linear,opacity .4s linear;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: white;
+  margin: 0.5em;
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 100%;
+  background-size: 0%;
+  background-image: url(accept-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: background-size 0.4s cubic-bezier(0.06,1.74,0.65,-1.14), background-color 0.4s ease 0.2s;
+  transition: background-size 0.4s cubic-bezier(0.06,1.74,0.65,-1.14), background-color 0.4s ease 0.2s;
+}
+
+.c2:focus {
+  outline: 0;
+  border: 1px solid rgba(175,47,47,0.15);
+  box-shadow: 0 0 10px #e6e6e6;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #bfbfbf;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  -webkit-transition: visibility .4s linear,opacity .4s linear;
+  transition: visibility .4s linear,opacity .4s linear;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 10px;
+  max-width: 10px;
+  margin: 0.5em;
+  background-color: transparent;
+  border: 0;
+  font-size: 24px;
+  font-weight: 300;
+  color: transparent;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c4:focus {
+  outline: 0;
+  border: 1px solid rgba(175,47,47,0.15);
+  box-shadow: 0 0 10px #e6e6e6;
+}
+
+.c0:hover .c4 {
+  color: #cc9a9a;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c0:hover .c4:hover {
+  color: #af5b5e;
+}
+
 <li
-  className="sc-EHOje lhpJrP"
+  className="c0 c1"
 >
   <button
     checked={false}
-    className="sc-bZQynM bmWDER"
+    className="c2"
     onClick={[Function]}
   />
   <span
     checked={false}
-    className="sc-ifAKCX cqwElN"
+    className="c3"
     onDoubleClick={[Function]}
   >
     
   </span>
   <button
-    className="sc-gzVnrw dTBaCJ"
+    className="c4"
     onClick={[Function]}
   >
     X
@@ -76,23 +592,189 @@ exports[`ListItem Component should checkbox and text be unchecked and empty 1`] 
 `;
 
 exports[`ListItem Component should checkbox and text be unchecked and not empty 1`] = `
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 8;
+  -ms-flex: 8;
+  flex: 8;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding: 10px;
+  -webkit-transition: color 0.3s linear 0.2s;
+  transition: color 0.3s linear 0.2s;
+  font-size: 24px;
+  word-wrap: break-word;
+  word-break: break-word;
+  border: 1px dashed transparent;
+}
+
+.c3:hover {
+  border-color: rgba(175,47,47,0.5);
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  overflow: hidden;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  list-style: none;
+  border-bottom: 1px solid #ddd;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1:last-child {
+  border-bottom: 0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #bfbfbf;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  -webkit-transition: visibility .4s linear,opacity .4s linear;
+  transition: visibility .4s linear,opacity .4s linear;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: white;
+  margin: 0.5em;
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 100%;
+  background-size: 0%;
+  background-image: url(accept-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: background-size 0.4s cubic-bezier(0.06,1.74,0.65,-1.14), background-color 0.4s ease 0.2s;
+  transition: background-size 0.4s cubic-bezier(0.06,1.74,0.65,-1.14), background-color 0.4s ease 0.2s;
+}
+
+.c2:focus {
+  outline: 0;
+  border: 1px solid rgba(175,47,47,0.15);
+  box-shadow: 0 0 10px #e6e6e6;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #bfbfbf;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  -webkit-transition: visibility .4s linear,opacity .4s linear;
+  transition: visibility .4s linear,opacity .4s linear;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 10px;
+  max-width: 10px;
+  margin: 0.5em;
+  background-color: transparent;
+  border: 0;
+  font-size: 24px;
+  font-weight: 300;
+  color: transparent;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c4:focus {
+  outline: 0;
+  border: 1px solid rgba(175,47,47,0.15);
+  box-shadow: 0 0 10px #e6e6e6;
+}
+
+.c0:hover .c4 {
+  color: #cc9a9a;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c0:hover .c4:hover {
+  color: #af5b5e;
+}
+
 <li
-  className="sc-EHOje lhpJrP"
+  className="c0 c1"
 >
   <button
     checked={false}
-    className="sc-bZQynM bmWDER"
+    className="c2"
     onClick={[Function]}
   />
   <span
     checked={false}
-    className="sc-ifAKCX cqwElN"
+    className="c3"
     onDoubleClick={[Function]}
   >
     some text
   </span>
   <button
-    className="sc-gzVnrw dTBaCJ"
+    className="c4"
     onClick={[Function]}
   >
     X

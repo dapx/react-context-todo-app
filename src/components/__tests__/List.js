@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
+import 'jest-styled-components';
 import { mount } from 'enzyme';
 import List from '../List';
 import ListItem from '../ListItem';

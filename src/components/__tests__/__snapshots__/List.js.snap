@@ -1,44 +1,222 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`List Component should be empty and hide clear completed button 1`] = `
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #bfbfbf;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: border-color 0.2s linear;
+  transition: border-color 0.2s linear;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 8;
+  -ms-flex: 8;
+  flex: 8;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: space-around;
+  -webkit-box-align: space-around;
+  -ms-flex-align: space-around;
+  align-items: space-around;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border-top: 1px solid #e6e6e6;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2),0 8px 0 -3px #f6f6f6, 0 9px 1px -3px rgba(0,0,0,0.2),0 16px 0 -6px #f6f6f6, 0 17px 2px -6px rgba(0,0,0,0.2);
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 5px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  color: #bfbfbf;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #bfbfbf;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  -webkit-transition: visibility .4s linear,opacity .4s linear;
+  transition: visibility .4s linear,opacity .4s linear;
+  opacity: 0;
+  visibility: hidden;
+  border: none;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c6:focus {
+  outline: 0;
+  border: 1px solid rgba(175,47,47,0.15);
+  box-shadow: 0 0 10px #e6e6e6;
+}
+
+.c6:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 <div
-  className="sc-dnqmqq bVEpG"
+  className="c0"
 >
   <div
-    className="sc-iwsKbI NRpYV"
+    className="c1"
   />
   <div
-    className="sc-gqjmRU dOQKBh"
+    className="c2"
   >
     <span
-      className="sc-VigVT lbrqEn"
+      className="c3"
     >
       0 items left
     </span>
     <div
-      className="sc-gZMcBi kgBKRm"
+      className="c4"
     >
       <a
-        className="sc-htoDjs jCmNzT"
+        className="c5"
         href="#"
       >
         All
       </a>
       <a
-        className="sc-htoDjs jCmNzT"
+        className="c5"
         href="#/active"
       >
         Active
       </a>
       <a
-        className="sc-htoDjs jCmNzT"
+        className="c5"
         href="#/completed"
       >
         Completed
       </a>
     </div>
     <button
-      className="sc-jTzLTM oYfQt"
+      className="c6"
       hidden={true}
       onClick={undefined}
     >
@@ -49,51 +227,478 @@ exports[`List Component should be empty and hide clear completed button 1`] = `
 `;
 
 exports[`List Component should render one todo item and one completed 1`] = `
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 8;
+  -ms-flex: 8;
+  flex: 8;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding: 10px;
+  -webkit-transition: color 0.3s linear 0.2s;
+  transition: color 0.3s linear 0.2s;
+  font-size: 24px;
+  word-wrap: break-word;
+  word-break: break-word;
+  border: 1px dashed transparent;
+}
+
+.c5:hover {
+  border-color: rgba(175,47,47,0.5);
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 8;
+  -ms-flex: 8;
+  flex: 8;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding: 10px;
+  -webkit-transition: color 0.3s linear 0.2s;
+  transition: color 0.3s linear 0.2s;
+  font-size: 24px;
+  word-wrap: break-word;
+  word-break: break-word;
+  border: 1px dashed transparent;
+  -webkit-text-decoration: line-through;
+  text-decoration: line-through;
+  color: #ddd;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.c8:hover {
+  border-color: rgba(175,47,47,0.5);
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  overflow: hidden;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  list-style: none;
+  border-bottom: 1px solid #ddd;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3:last-child {
+  border-bottom: 0;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #bfbfbf;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  -webkit-transition: visibility .4s linear,opacity .4s linear;
+  transition: visibility .4s linear,opacity .4s linear;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: white;
+  margin: 0.5em;
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 100%;
+  background-size: 0%;
+  background-image: url(accept-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: background-size 0.4s cubic-bezier(0.06,1.74,0.65,-1.14), background-color 0.4s ease 0.2s;
+  transition: background-size 0.4s cubic-bezier(0.06,1.74,0.65,-1.14), background-color 0.4s ease 0.2s;
+}
+
+.c4:focus {
+  outline: 0;
+  border: 1px solid rgba(175,47,47,0.15);
+  box-shadow: 0 0 10px #e6e6e6;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #bfbfbf;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  -webkit-transition: visibility .4s linear,opacity .4s linear;
+  transition: visibility .4s linear,opacity .4s linear;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: white;
+  margin: 0.5em;
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 100%;
+  background-size: 0%;
+  background-image: url(accept-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: background-size 0.4s cubic-bezier(0.06,1.74,0.65,-1.14), background-color 0.4s ease 0.2s;
+  transition: background-size 0.4s cubic-bezier(0.06,1.74,0.65,-1.14), background-color 0.4s ease 0.2s;
+  background-color: rgba(175,47,47,0.5);
+  background-size: 50%;
+  -webkit-transition: background-size 0.4s cubic-bezier(0.6,-1,0.7,2), background-color 0.4s ease;
+  transition: background-size 0.4s cubic-bezier(0.6,-1,0.7,2), background-color 0.4s ease;
+}
+
+.c7:focus {
+  outline: 0;
+  border: 1px solid rgba(175,47,47,0.15);
+  box-shadow: 0 0 10px #e6e6e6;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #bfbfbf;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  -webkit-transition: visibility .4s linear,opacity .4s linear;
+  transition: visibility .4s linear,opacity .4s linear;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 10px;
+  max-width: 10px;
+  margin: 0.5em;
+  background-color: transparent;
+  border: 0;
+  font-size: 24px;
+  font-weight: 300;
+  color: transparent;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c6:focus {
+  outline: 0;
+  border: 1px solid rgba(175,47,47,0.15);
+  box-shadow: 0 0 10px #e6e6e6;
+}
+
+.c2:hover .c6 {
+  color: #cc9a9a;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c2:hover .c6:hover {
+  color: #af5b5e;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #bfbfbf;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: border-color 0.2s linear;
+  transition: border-color 0.2s linear;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 8;
+  -ms-flex: 8;
+  flex: 8;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: space-around;
+  -webkit-box-align: space-around;
+  -ms-flex-align: space-around;
+  align-items: space-around;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border-top: 1px solid #e6e6e6;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2),0 8px 0 -3px #f6f6f6, 0 9px 1px -3px rgba(0,0,0,0.2),0 16px 0 -6px #f6f6f6, 0 17px 2px -6px rgba(0,0,0,0.2);
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 5px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  color: #bfbfbf;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #bfbfbf;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  -webkit-transition: visibility .4s linear,opacity .4s linear;
+  transition: visibility .4s linear,opacity .4s linear;
+  border: none;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c13:focus {
+  outline: 0;
+  border: 1px solid rgba(175,47,47,0.15);
+  box-shadow: 0 0 10px #e6e6e6;
+}
+
+.c13:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 <div
-  className="sc-dnqmqq bVEpG"
+  className="c0"
 >
   <div
-    className="sc-iwsKbI NRpYV"
+    className="c1"
   >
     <li
-      className="sc-EHOje lhpJrP"
+      className="c2 c3"
     >
       <button
         checked={false}
-        className="sc-bZQynM bmWDER"
+        className="c4"
         onClick={[Function]}
       />
       <span
         checked={false}
-        className="sc-ifAKCX cqwElN"
+        className="c5"
         onDoubleClick={[Function]}
       >
         todo 1
       </span>
       <button
-        className="sc-gzVnrw dTBaCJ"
+        className="c6"
         onClick={[Function]}
       >
         X
       </button>
     </li>
     <li
-      className="sc-EHOje lhpJrP"
+      className="c2 c3"
     >
       <button
         checked={true}
-        className="sc-bZQynM kWRFME"
+        className="c7"
         onClick={[Function]}
       />
       <span
         checked={true}
-        className="sc-ifAKCX clBMZx"
+        className="c8"
         onDoubleClick={[Function]}
       >
         todo 2
       </span>
       <button
-        className="sc-gzVnrw dTBaCJ"
+        className="c6"
         onClick={[Function]}
       >
         X
@@ -101,37 +706,37 @@ exports[`List Component should render one todo item and one completed 1`] = `
     </li>
   </div>
   <div
-    className="sc-gqjmRU dOQKBh"
+    className="c9"
   >
     <span
-      className="sc-VigVT lbrqEn"
+      className="c10"
     >
       1 item left
     </span>
     <div
-      className="sc-gZMcBi kgBKRm"
+      className="c11"
     >
       <a
-        className="sc-htoDjs jCmNzT"
+        className="c12"
         href="#"
       >
         All
       </a>
       <a
-        className="sc-htoDjs jCmNzT"
+        className="c12"
         href="#/active"
       >
         Active
       </a>
       <a
-        className="sc-htoDjs jCmNzT"
+        className="c12"
         href="#/completed"
       >
         Completed
       </a>
     </div>
     <button
-      className="sc-jTzLTM iqCtJN"
+      className="c13"
       hidden={false}
       onClick={undefined}
     >
@@ -142,51 +747,402 @@ exports[`List Component should render one todo item and one completed 1`] = `
 `;
 
 exports[`List Component should render two completed todo items and hide clear completed button 1`] = `
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 8;
+  -ms-flex: 8;
+  flex: 8;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding: 10px;
+  -webkit-transition: color 0.3s linear 0.2s;
+  transition: color 0.3s linear 0.2s;
+  font-size: 24px;
+  word-wrap: break-word;
+  word-break: break-word;
+  border: 1px dashed transparent;
+  -webkit-text-decoration: line-through;
+  text-decoration: line-through;
+  color: #ddd;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.c5:hover {
+  border-color: rgba(175,47,47,0.5);
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  overflow: hidden;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  list-style: none;
+  border-bottom: 1px solid #ddd;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3:last-child {
+  border-bottom: 0;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #bfbfbf;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  -webkit-transition: visibility .4s linear,opacity .4s linear;
+  transition: visibility .4s linear,opacity .4s linear;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: white;
+  margin: 0.5em;
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 100%;
+  background-size: 0%;
+  background-image: url(accept-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: background-size 0.4s cubic-bezier(0.06,1.74,0.65,-1.14), background-color 0.4s ease 0.2s;
+  transition: background-size 0.4s cubic-bezier(0.06,1.74,0.65,-1.14), background-color 0.4s ease 0.2s;
+  background-color: rgba(175,47,47,0.5);
+  background-size: 50%;
+  -webkit-transition: background-size 0.4s cubic-bezier(0.6,-1,0.7,2), background-color 0.4s ease;
+  transition: background-size 0.4s cubic-bezier(0.6,-1,0.7,2), background-color 0.4s ease;
+}
+
+.c4:focus {
+  outline: 0;
+  border: 1px solid rgba(175,47,47,0.15);
+  box-shadow: 0 0 10px #e6e6e6;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #bfbfbf;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  -webkit-transition: visibility .4s linear,opacity .4s linear;
+  transition: visibility .4s linear,opacity .4s linear;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 10px;
+  max-width: 10px;
+  margin: 0.5em;
+  background-color: transparent;
+  border: 0;
+  font-size: 24px;
+  font-weight: 300;
+  color: transparent;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c6:focus {
+  outline: 0;
+  border: 1px solid rgba(175,47,47,0.15);
+  box-shadow: 0 0 10px #e6e6e6;
+}
+
+.c2:hover .c6 {
+  color: #cc9a9a;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c2:hover .c6:hover {
+  color: #af5b5e;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #bfbfbf;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: border-color 0.2s linear;
+  transition: border-color 0.2s linear;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 8;
+  -ms-flex: 8;
+  flex: 8;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: space-around;
+  -webkit-box-align: space-around;
+  -ms-flex-align: space-around;
+  align-items: space-around;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border-top: 1px solid #e6e6e6;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2),0 8px 0 -3px #f6f6f6, 0 9px 1px -3px rgba(0,0,0,0.2),0 16px 0 -6px #f6f6f6, 0 17px 2px -6px rgba(0,0,0,0.2);
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 5px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  color: #bfbfbf;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #bfbfbf;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  -webkit-transition: visibility .4s linear,opacity .4s linear;
+  transition: visibility .4s linear,opacity .4s linear;
+  border: none;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c11:focus {
+  outline: 0;
+  border: 1px solid rgba(175,47,47,0.15);
+  box-shadow: 0 0 10px #e6e6e6;
+}
+
+.c11:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 <div
-  className="sc-dnqmqq bVEpG"
+  className="c0"
 >
   <div
-    className="sc-iwsKbI NRpYV"
+    className="c1"
   >
     <li
-      className="sc-EHOje lhpJrP"
+      className="c2 c3"
     >
       <button
         checked={true}
-        className="sc-bZQynM kWRFME"
+        className="c4"
         onClick={[Function]}
       />
       <span
         checked={true}
-        className="sc-ifAKCX clBMZx"
+        className="c5"
         onDoubleClick={[Function]}
       >
         todo 1
       </span>
       <button
-        className="sc-gzVnrw dTBaCJ"
+        className="c6"
         onClick={[Function]}
       >
         X
       </button>
     </li>
     <li
-      className="sc-EHOje lhpJrP"
+      className="c2 c3"
     >
       <button
         checked={true}
-        className="sc-bZQynM kWRFME"
+        className="c4"
         onClick={[Function]}
       />
       <span
         checked={true}
-        className="sc-ifAKCX clBMZx"
+        className="c5"
         onDoubleClick={[Function]}
       >
         todo 2
       </span>
       <button
-        className="sc-gzVnrw dTBaCJ"
+        className="c6"
         onClick={[Function]}
       >
         X
@@ -194,37 +1150,37 @@ exports[`List Component should render two completed todo items and hide clear co
     </li>
   </div>
   <div
-    className="sc-gqjmRU dOQKBh"
+    className="c7"
   >
     <span
-      className="sc-VigVT lbrqEn"
+      className="c8"
     >
       0 items left
     </span>
     <div
-      className="sc-gZMcBi kgBKRm"
+      className="c9"
     >
       <a
-        className="sc-htoDjs jCmNzT"
+        className="c10"
         href="#"
       >
         All
       </a>
       <a
-        className="sc-htoDjs jCmNzT"
+        className="c10"
         href="#/active"
       >
         Active
       </a>
       <a
-        className="sc-htoDjs jCmNzT"
+        className="c10"
         href="#/completed"
       >
         Completed
       </a>
     </div>
     <button
-      className="sc-jTzLTM iqCtJN"
+      className="c11"
       hidden={false}
       onClick={undefined}
     >
@@ -235,51 +1191,395 @@ exports[`List Component should render two completed todo items and hide clear co
 `;
 
 exports[`List Component should render two todo items 1`] = `
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 8;
+  -ms-flex: 8;
+  flex: 8;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding: 10px;
+  -webkit-transition: color 0.3s linear 0.2s;
+  transition: color 0.3s linear 0.2s;
+  font-size: 24px;
+  word-wrap: break-word;
+  word-break: break-word;
+  border: 1px dashed transparent;
+}
+
+.c5:hover {
+  border-color: rgba(175,47,47,0.5);
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  overflow: hidden;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  list-style: none;
+  border-bottom: 1px solid #ddd;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3:last-child {
+  border-bottom: 0;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #bfbfbf;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  -webkit-transition: visibility .4s linear,opacity .4s linear;
+  transition: visibility .4s linear,opacity .4s linear;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: white;
+  margin: 0.5em;
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 100%;
+  background-size: 0%;
+  background-image: url(accept-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: background-size 0.4s cubic-bezier(0.06,1.74,0.65,-1.14), background-color 0.4s ease 0.2s;
+  transition: background-size 0.4s cubic-bezier(0.06,1.74,0.65,-1.14), background-color 0.4s ease 0.2s;
+}
+
+.c4:focus {
+  outline: 0;
+  border: 1px solid rgba(175,47,47,0.15);
+  box-shadow: 0 0 10px #e6e6e6;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #bfbfbf;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  -webkit-transition: visibility .4s linear,opacity .4s linear;
+  transition: visibility .4s linear,opacity .4s linear;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 10px;
+  max-width: 10px;
+  margin: 0.5em;
+  background-color: transparent;
+  border: 0;
+  font-size: 24px;
+  font-weight: 300;
+  color: transparent;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c6:focus {
+  outline: 0;
+  border: 1px solid rgba(175,47,47,0.15);
+  box-shadow: 0 0 10px #e6e6e6;
+}
+
+.c2:hover .c6 {
+  color: #cc9a9a;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.c2:hover .c6:hover {
+  color: #af5b5e;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #bfbfbf;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: border-color 0.2s linear;
+  transition: border-color 0.2s linear;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 8;
+  -ms-flex: 8;
+  flex: 8;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: space-around;
+  -webkit-box-align: space-around;
+  -ms-flex-align: space-around;
+  align-items: space-around;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border-top: 1px solid #e6e6e6;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2),0 8px 0 -3px #f6f6f6, 0 9px 1px -3px rgba(0,0,0,0.2),0 16px 0 -6px #f6f6f6, 0 17px 2px -6px rgba(0,0,0,0.2);
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 5px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  color: #bfbfbf;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #bfbfbf;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  -webkit-transition: visibility .4s linear,opacity .4s linear;
+  transition: visibility .4s linear,opacity .4s linear;
+  opacity: 0;
+  visibility: hidden;
+  border: none;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c11:focus {
+  outline: 0;
+  border: 1px solid rgba(175,47,47,0.15);
+  box-shadow: 0 0 10px #e6e6e6;
+}
+
+.c11:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 <div
-  className="sc-dnqmqq bVEpG"
+  className="c0"
 >
   <div
-    className="sc-iwsKbI NRpYV"
+    className="c1"
   >
     <li
-      className="sc-EHOje lhpJrP"
+      className="c2 c3"
     >
       <button
         checked={false}
-        className="sc-bZQynM bmWDER"
+        className="c4"
         onClick={[Function]}
       />
       <span
         checked={false}
-        className="sc-ifAKCX cqwElN"
+        className="c5"
         onDoubleClick={[Function]}
       >
         todo 1
       </span>
       <button
-        className="sc-gzVnrw dTBaCJ"
+        className="c6"
         onClick={[Function]}
       >
         X
       </button>
     </li>
     <li
-      className="sc-EHOje lhpJrP"
+      className="c2 c3"
     >
       <button
         checked={false}
-        className="sc-bZQynM bmWDER"
+        className="c4"
         onClick={[Function]}
       />
       <span
         checked={false}
-        className="sc-ifAKCX cqwElN"
+        className="c5"
         onDoubleClick={[Function]}
       >
         todo 2
       </span>
       <button
-        className="sc-gzVnrw dTBaCJ"
+        className="c6"
         onClick={[Function]}
       >
         X
@@ -287,37 +1587,37 @@ exports[`List Component should render two todo items 1`] = `
     </li>
   </div>
   <div
-    className="sc-gqjmRU dOQKBh"
+    className="c7"
   >
     <span
-      className="sc-VigVT lbrqEn"
+      className="c8"
     >
       2 items left
     </span>
     <div
-      className="sc-gZMcBi kgBKRm"
+      className="c9"
     >
       <a
-        className="sc-htoDjs jCmNzT"
+        className="c10"
         href="#"
       >
         All
       </a>
       <a
-        className="sc-htoDjs jCmNzT"
+        className="c10"
         href="#/active"
       >
         Active
       </a>
       <a
-        className="sc-htoDjs jCmNzT"
+        className="c10"
         href="#/completed"
       >
         Completed
       </a>
     </div>
     <button
-      className="sc-jTzLTM oYfQt"
+      className="c11"
       hidden={true}
       onClick={undefined}
     >

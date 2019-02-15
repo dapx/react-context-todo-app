@@ -1,13 +1,90 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MenuOption Component should be disabled 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #bfbfbf;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: border-color 0.2s linear;
+  transition: border-color 0.2s linear;
+}
+
 <a
-  className="sc-bwzfXH hcawhA"
+  className="c0"
 />
 `;
 
 exports[`MenuOption Component should be enabled 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #bfbfbf;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: border-color 0.2s linear;
+  transition: border-color 0.2s linear;
+  border-color: rgba(175,47,47,0.5);
+}
+
 <a
-  className="sc-bwzfXH cjqYyf"
+  className="c0"
 />
 `;

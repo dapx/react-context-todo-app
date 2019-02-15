@@ -1,9 +1,50 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should be the same as the snapshot 1`] = `
+.c0 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0.5em;
+  margin: 0.5em;
+  border: none;
+  border-radius: 3px;
+  font-size: 24px;
+}
+
+.c0::-webkit-input-placeholder {
+  font-style: italic;
+  font-weight: 300;
+  color: #e6e6e6;
+}
+
+.c0::-moz-placeholder {
+  font-style: italic;
+  font-weight: 300;
+  color: #e6e6e6;
+}
+
+.c0:-ms-input-placeholder {
+  font-style: italic;
+  font-weight: 300;
+  color: #e6e6e6;
+}
+
+.c0::placeholder {
+  font-style: italic;
+  font-weight: 300;
+  color: #e6e6e6;
+}
+
+.c0:focus {
+  outline: 0;
+  border: 1px solid rgba(175,47,47,0.15);
+  box-shadow: 0 0 10px #e6e6e6;
+}
+
 <input
   autoFocus={true}
-  className="sc-bdVaJa gKrhPj"
+  className="c0"
   onChange={[Function]}
   onKeyDown={[Function]}
   placeholder="What needs to be done?"

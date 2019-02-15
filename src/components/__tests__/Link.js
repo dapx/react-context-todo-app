@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
+import 'jest-styled-components';
 import Link from '../Link';
 
 it('renders without crashing', () => {

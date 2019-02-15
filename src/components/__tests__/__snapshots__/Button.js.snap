@@ -1,14 +1,80 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button Component should be the same as the snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #bfbfbf;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  -webkit-transition: visibility .4s linear,opacity .4s linear;
+  transition: visibility .4s linear,opacity .4s linear;
+}
+
+.c0:focus {
+  outline: 0;
+  border: 1px solid rgba(175,47,47,0.15);
+  box-shadow: 0 0 10px #e6e6e6;
+}
+
 <button
-  className="sc-htpNat FLdqD"
+  className="c0"
 />
 `;
 
 exports[`Button Component should hide button when hidden prop is true 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #bfbfbf;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  -webkit-transition: visibility .4s linear,opacity .4s linear;
+  transition: visibility .4s linear,opacity .4s linear;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.c0:focus {
+  outline: 0;
+  border: 1px solid rgba(175,47,47,0.15);
+  box-shadow: 0 0 10px #e6e6e6;
+}
+
 <button
-  className="sc-htpNat ckZtac"
+  className="c0"
   hidden={true}
 />
 `;
