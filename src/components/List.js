@@ -21,7 +21,6 @@ const Content = styled.div`
   flex: 1;
   flex-wrap: nowrap;
   flex-direction: column;
-  overflow: hidden;
 `;
 
 const FilterMenu = styled.div`
